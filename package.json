@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "module": "index.js",
-  "typings": "./antd/index.d.ts",
+  "typings": "./index.d.ts",
   "scripts": {
-    "prebuild": "rm -rf dist",
     "build": "node scripts/build.js"
   },
   "author": "lyw",
@@ -18,8 +17,6 @@
     "@babel/plugin-transform-runtime": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/react": "^18.2.33",
     "babel-plugin-module-resolver": "^5.0.0",
     "chalk": "^5.3.0",
@@ -28,10 +25,6 @@
     "gulp-babel": "^8.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "merge2": "^1.4.1",
-    "rollup": "^4.1.5",
-    "rollup-plugin-copy": "^3.5.0",
-    "rollup-plugin-dts": "^6.1.0",
-    "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.2.2"
   }
 }
