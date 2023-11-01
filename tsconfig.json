@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./",
     "strictNullChecks": true,
     "module": "esnext",
     "moduleResolution": "Bundler",
@@ -16,9 +16,7 @@
     "lib": ["dom", "es2017"],
     "skipLibCheck": true,
     "stripInternal": true,
-    "resolvePackageJsonExports": true,
-    "declaration": true,
-    "outDir": "dist"
+    "resolvePackageJsonExports": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "lib"]
