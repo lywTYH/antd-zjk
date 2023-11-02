@@ -1,6 +1,8 @@
 {
   "name": "csces-antd",
   "version": "1.0.1",
+  "license": "MIT",
+  "author": "lyw",
   "type": "module",
   "module": "index.js",
   "typings": "./index.d.ts",
@@ -8,8 +10,9 @@
     "build": "node scripts/build.js",
     "prepare": "husky install"
   },
-  "author": "lyw",
-  "license": "MIT",
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,md}": "prettier --write --ignore-unknown"
+  },
   "dependencies": {
     "antd": "^5.10.2"
   },
@@ -30,9 +33,8 @@
     "lint-staged": "^15.0.2",
     "merge2": "^1.4.1",
     "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-packagejson": "^2.4.6",
     "typescript": "^5.2.2"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,json,md}": "prettier --write --ignore-unknown"
   }
 }
