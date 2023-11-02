@@ -1,6 +1,6 @@
 import React from "react";
-import { Button as OriginButton } from "antd";
+import { Button as OriginButton, ButtonProps } from "antd";
 
-export default function Button({ size }: { size: "small" | "large" }) {
+export default function Button({ size }: Partial<ButtonProps>) {
   return <OriginButton size={size} />
 }

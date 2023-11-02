@@ -7,6 +7,7 @@ import gulpBabel from 'gulp-babel';
 
 import { Logger } from './scripts/utils.js';
 import gulpTransform from './scripts/gulp-transform.js';
+import gulpDTSModule from './scripts/gulp-dts-module.js';
 import { seedToken, mapToken, ComponentsToken } from './src/theme.js';
 
 const buildPath = 'dist';
@@ -47,9 +48,12 @@ gulp.task('compileTSXForESM', () => {
       logger.success('ts compile success');
     });
 
-  const dtsStream = tsStream.dts.pipe(gulp.dest(buildPath)).on('end', () => {
-    logger.success('ts type compile success');
-  });
+  const dtsStream = tsStream.dts
+    .pipe(gulpDTSModule('./src', { antd: './src/antd' }))
+    .pipe(gulp.dest(buildPath))
+    .on('end', () => {
+      logger.success('ts type compile success');
+    });
   return merge2([jsStream, dtsStream]);
 });
 
