@@ -5,7 +5,8 @@
   "module": "index.js",
   "typings": "./index.d.ts",
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "prepare": "husky install"
   },
   "author": "lyw",
   "license": "MIT",
@@ -25,7 +26,13 @@
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
     "merge2": "^1.4.1",
+    "prettier": "^3.0.3",
     "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,md}": "prettier --write --ignore-unknown"
   }
 }
