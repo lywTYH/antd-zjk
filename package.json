@@ -7,11 +7,19 @@
   "module": "index.js",
   "typings": "./index.d.ts",
   "scripts": {
-    "build": "node scripts/build.js",
+    "build:component": "gulp build:component",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,json,md}": "prettier --write --ignore-unknown"
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,jsx}": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --parser=typescript --write"
+    ]
   },
   "dependencies": {
     "antd": "^5.10.2"
@@ -21,10 +29,12 @@
     "@babel/plugin-transform-runtime": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
-    "@types/react": "^18.2.33",
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
     "babel-plugin-module-resolver": "^5.0.0",
     "chalk": "^5.3.0",
     "del": "^7.1.0",
+    "dumi": "^2.2.14",
     "fs-extra": "^11.1.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
@@ -35,6 +45,12 @@
     "prettier": "^3.0.3",
     "prettier-plugin-organize-imports": "^3.2.3",
     "prettier-plugin-packagejson": "^2.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   }
 }

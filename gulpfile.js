@@ -1,17 +1,15 @@
-import gulp from 'gulp';
 import { deleteAsync } from 'del';
 import fs from 'fs-extra';
+import gulp from 'gulp';
+import gulpBabel from 'gulp-babel';
 import gulpTS from 'gulp-typescript';
 import merge2 from 'merge2';
-import gulpBabel from 'gulp-babel';
 
-import { Logger } from './scripts/utils.js';
-import gulpTransform from './scripts/gulp-transform.js';
 import gulpDTSModule from './scripts/gulp-dts-module.js';
-import { seedToken, mapToken, ComponentsToken } from './src/theme.js';
+import gulpTransform from './scripts/gulp-transform.js';
+import { ComponentsToken, mapToken, seedToken } from './src/theme.js';
 
 const buildPath = 'dist';
-const logger = new Logger();
 const babelConfig = {
   presets: [
     '@babel/preset-react',
@@ -41,19 +39,11 @@ const babelConfig = {
 gulp.task('compileTSXForESM', () => {
   const tsProject = gulpTS.createProject('./tsconfig.json');
   const tsStream = gulp.src(['src/**/**/*.ts', 'src/**/**/*.tsx']).pipe(tsProject());
-  const jsStream = tsStream.js
-    .pipe(gulpBabel(babelConfig))
-    .pipe(gulp.dest(buildPath))
-    .on('end', () => {
-      logger.success('ts compile success');
-    });
+  const jsStream = tsStream.js.pipe(gulpBabel(babelConfig)).pipe(gulp.dest(buildPath));
 
   const dtsStream = tsStream.dts
     .pipe(gulpDTSModule('./src', { antd: './src/antd' }))
-    .pipe(gulp.dest(buildPath))
-    .on('end', () => {
-      logger.success('ts type compile success');
-    });
+    .pipe(gulp.dest(buildPath));
   return merge2([jsStream, dtsStream]);
 });
 
@@ -99,10 +89,7 @@ gulp.task('copyAntdWithTransform', () => {
   return gulp
     .src(['./node_modules/antd/es/**/**'])
     .pipe(gulpTransform(antdTokenMatches, antdTokenTransform))
-    .pipe(gulp.dest(`${buildPath}/antd`))
-    .on('end', () => {
-      logger.success('antd copy and transform success');
-    });
+    .pipe(gulp.dest(`${buildPath}/antd`));
 });
 
 gulp.task('generatePackageJson', () => {
@@ -124,21 +111,13 @@ gulp.task('generatePackageJson', () => {
         return JSON.stringify(ownerPkg, undefined, 2);
       }),
     )
-    .pipe(gulp.dest(buildPath))
-    .on('end', () => {
-      logger.success('package.json file generated');
-    });
+    .pipe(gulp.dest(buildPath));
 });
 
-gulp.task('clean', (done) =>
-  deleteAsync([`${buildPath}/**/**}`]).then(() => {
-    logger.success('dist deleted');
-    done();
-  }),
-);
+gulp.task('clean', () => deleteAsync([buildPath]));
 
 gulp.task(
-  'compile',
+  'build:component',
   gulp.series([
     'clean',
     gulp.parallel(['copyAntdWithTransform', 'generatePackageJson']),
