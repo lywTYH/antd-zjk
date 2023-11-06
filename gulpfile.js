@@ -124,3 +124,7 @@ gulp.task(
     'compileTSXForESM',
   ]),
 );
+
+gulp.task('build:docs', () => {
+  console.log('build:docs');
+});
