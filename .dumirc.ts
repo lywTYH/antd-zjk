@@ -3,6 +3,7 @@ import path from 'path';
 
 export default defineConfig({
   outputPath: '_docs',
+  live: true,
   resolve: {
     atomDirs: [
       { type: 'component', dir: 'src' },
@@ -16,6 +17,10 @@ export default defineConfig({
     antd: path.join(__dirname, 'dist/antd'),
   },
   metas: [{ name: 'theme-color', content: '#1677ff' }],
+  conventionRoutes: {
+    // to avoid generate routes for .dumi/pages/index/components/xx
+    exclude: [new RegExp('index/components/')],
+  },
   // favicons
   // more config: https://d.umijs.org/config
 });

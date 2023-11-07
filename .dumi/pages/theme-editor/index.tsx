@@ -1,12 +1,12 @@
-import { enUS, zhCN } from 'antd-token-previewer';
-//@ts-ignore
-import { Button, Skeleton, message } from 'antd';
+// import { enUS, zhCN } from 'antd-token-previewer';
+import { Skeleton, message } from 'antd';
 import type { ThemeConfig } from 'antd/es/config-provider/context';
+//@ts-ignore
 import { Helmet } from 'dumi';
 import React, { Suspense, useEffect } from 'react';
 import useLocale from '../../hooks/useLocale';
 //@ts-ignore
-const ThemeEditor = React.lazy(() => import('antd-token-previewer/lib/ThemeEditor'));
+// const ThemeEditor = React.lazy(() => import('antd-token-previewer/lib/ThemeEditor'));
 
 const locales = {
   cn: {
@@ -62,7 +62,8 @@ const CustomTheme = () => {
       </Helmet>
       {contextHolder}
       <Suspense fallback={<Skeleton style={{ margin: 24 }} />}>
-        <ThemeEditor
+        theme editor has some error
+        {/* <ThemeEditor
           advanced
           hideAdvancedSwitcher
           theme={{ name: 'Custom Theme', key: 'test', config: theme }}
@@ -76,7 +77,7 @@ const CustomTheme = () => {
               {locale.save}
             </Button>
           }
-        />
+        /> */}
       </Suspense>
     </div>
   );
