@@ -13,16 +13,16 @@ import type { SharedProps } from './interface';
 // ============================= Theme =============================
 const locales = {
   cn: {
-    design: '设计',
-    development: '研发',
+    // design: '设计',
+    // development: '研发',
     components: '组件',
-    resources: '资源',
+    // resources: '资源',
   },
   en: {
-    design: 'Design',
-    development: 'Development',
+    // design: 'Design',
+    // development: 'Development',
     components: 'Components',
-    resources: 'Resources',
+    // resources: 'Resources',
   },
 };
 
@@ -125,7 +125,6 @@ export default ({
   const [locale] = useLocale(locales);
 
   const sidebarData = useFullSidebarData();
-  const blogList = sidebarData['/docs/blog']?.[0]?.children || [];
 
   const { styles } = useStyle();
 
@@ -184,22 +183,22 @@ export default ({
   }
 
   const items: MenuProps['items'] = [
-    {
-      label: (
-        <Link to={utils.getLocalizedPathname('/docs/spec/introduce', isZhCN, search)}>
-          {locale.design}
-        </Link>
-      ),
-      key: 'docs/spec',
-    },
-    {
-      label: (
-        <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN, search)}>
-          {locale.development}
-        </Link>
-      ),
-      key: 'docs/react',
-    },
+    // {
+    //   label: (
+    //     <Link to={utils.getLocalizedPathname('/docs/spec/introduce', isZhCN, search)}>
+    //       {locale.design}
+    //     </Link>
+    //   ),
+    //   key: 'docs/spec',
+    // },
+    // {
+    //   label: (
+    //     <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN, search)}>
+    //       {locale.development}
+    //     </Link>
+    //   ),
+    //   key: 'docs/react',
+    // },
     {
       label: (
         <Link to={utils.getLocalizedPathname('/components/overview/', isZhCN, search)}>
@@ -208,14 +207,14 @@ export default ({
       ),
       key: 'components',
     },
-    {
-      label: (
-        <Link to={utils.getLocalizedPathname('/docs/resources', isZhCN, search)}>
-          {locale.resources}
-        </Link>
-      ),
-      key: 'docs/resources',
-    },
+    // {
+    //   label: (
+    //     <Link to={utils.getLocalizedPathname('/docs/resources', isZhCN, search)}>
+    //       {locale.resources}
+    //     </Link>
+    //   ),
+    //   key: 'docs/resources',
+    // },
     ...(additional ?? []),
   ];
 

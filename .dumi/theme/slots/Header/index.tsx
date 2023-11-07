@@ -11,7 +11,7 @@ import * as utils from '../../utils';
 import type { SiteContextProps } from '../SiteContext';
 import SiteContext from '../SiteContext';
 import type { SharedProps } from './interface';
-import Logo from './Logo';
+// import Logo from './Logo';
 import Navigation from './Navigation';
 
 const RESPONSIVE_XS = 1120;
@@ -293,9 +293,7 @@ const Header: React.FC = () => {
         </Popover>
       )}
       <Row style={{ flexFlow: 'nowrap', height: 64 }}>
-        <Col {...colProps[0]}>
-          <Logo {...sharedProps} location={location} />
-        </Col>
+        <Col {...colProps[0]}>{/* <Logo {...sharedProps} location={location} /> */}</Col>
         <Col {...colProps[1]} className={styles.menuRow}>
           <div className="nav-search-wrapper">
             <DumiSearchBar />

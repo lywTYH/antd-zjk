@@ -364,14 +364,14 @@ const Footer: React.FC = () => {
   }, [lang, location.search]);
   return (
     <RcFooter
-      columns={getColumns}
+      columns={[]}
       className={styles.footer}
       bottom={
         <>
-          <div style={{ opacity: '0.4' }}>
+          {/* <div style={{ opacity: '0.4' }}>
             Made with <span style={{ color: '#fff' }}>❤</span> by
-          </div>
-          <div>{locale.owner}</div>
+          </div> */}
+          {/* <div>{locale.owner}</div> */}
         </>
       }
     />
