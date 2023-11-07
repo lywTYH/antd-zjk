@@ -20,4 +20,9 @@ dist
 *.njsproj
 *.sln
 *.sw?
-doc
+.dumi/tmp/
+.dumi/tmp-test
+.dumi/tmp-production/
+dist-docs
+.vscode
+_docs

@@ -19,6 +19,7 @@
     "declaration": true,
     "strictNullChecks": false,
     "strict": true,
+    "resolveJsonModule": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
