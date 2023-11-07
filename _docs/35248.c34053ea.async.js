@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcsces_antd=self.webpackChunkcsces_antd||[]).push([[35248],{435248:function(a,s,n){n.r(s),n.d(s,{scopes:function(){return o}});var c=n(636047),t=n(667294),o={"docs-components-app-demo-basic":{App:c.gV,Button:c.zx,Space:c.T,React:t},"docs-components-app-demo-config":{App:c.gV,Button:c.zx,Space:c.T,React:t}}}}]);

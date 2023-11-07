@@ -117,7 +117,7 @@ gulp.task('generatePackageJson', () => {
 gulp.task('clean', () => deleteAsync([buildPath]));
 
 gulp.task(
-  'build:component',
+  'build:components',
   gulp.series([
     'clean',
     gulp.parallel(['copyAntdWithTransform', 'generatePackageJson']),

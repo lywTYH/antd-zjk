@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcsces_antd=self.webpackChunkcsces_antd||[]).push([[81009],{512535:function(f,n,e){e.r(n),e.d(n,{default:function(){return d}});var a=e(346103),o=e(667294),r=function(){var s=(0,a.UO)(),u=s.id,c=(0,a.PT)(u),m=c,t=m.component;return t&&(0,o.createElement)(t)},d=r}}]);
