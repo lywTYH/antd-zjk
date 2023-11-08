@@ -9,11 +9,9 @@ import useLocation from '../../../hooks/useLocation';
 import PrevAndNext from '../../common/PrevAndNext';
 import type { DemoContextProps } from '../DemoContext';
 import DemoContext from '../DemoContext';
-// import Footer from '../Footer';
 
 const useStyle = createStyles(({ token, css }) => {
   const { antCls } = token;
-
   return {
     contributorsList: css`
       display: flex;
@@ -107,11 +105,9 @@ type AnchorItem = {
 const Content: React.FC<{ children: ReactNode }> = ({ children }) => {
   const meta = useRouteMeta();
   const tab = useTabMeta();
-  const { pathname, hash } = useLocation();
-  // const { formatMessage } = useIntl();
+  const { hash } = useLocation();
   const { styles } = useStyle();
   const token = useTheme();
-  // const { direction, isMobile } = useContext(SiteContext);
 
   const [showDebug, setShowDebug] = useLayoutState(false);
   const debugDemos = useMemo(
@@ -188,7 +184,6 @@ const Content: React.FC<{ children: ReactNode }> = ({ children }) => {
           <div style={{ minHeight: 'calc(100vh - 64px)' }}>{children}</div>
         </article>
         <PrevAndNext />
-        {/* <Footer /> */}
       </Col>
     </DemoContext.Provider>
   );

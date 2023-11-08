@@ -12,10 +12,9 @@ import useLocale from '../../../hooks/useLocale';
 import useLocation from '../../../hooks/useLocation';
 import GlobalStyles from '../../common/GlobalStyles';
 import { locales } from '../../constance';
-// import Header from '../../slots/Header';
+
 import SiteContext from '../../slots/SiteContext';
 import '../../static/style';
-// import IndexLayout from '../IndexLayout';
 import SidebarLayout from '../SidebarLayout';
 
 function DocLayout() {
@@ -57,7 +56,6 @@ function DocLayout() {
   // handle hash change or visit page hash from Link component, and jump after async chunk loaded
   useEffect(() => {
     const id = hash.replace('#', '');
-
     if (id) document.getElementById(decodeURIComponent(id))?.scrollIntoView();
   }, [loading, hash]);
 
@@ -95,7 +93,6 @@ function DocLayout() {
       </Helmet>
       <ConfigProvider direction={direction} locale={lang === 'cn' ? zhCN : undefined}>
         <GlobalStyles />
-        {/* <Header /> */}
         {content}
       </ConfigProvider>
     </>
