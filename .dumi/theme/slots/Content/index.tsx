@@ -1,16 +1,15 @@
 import { Anchor, Col, Space, Typography } from 'antd';
 import { createStyles, useTheme } from 'antd-style';
 import classNames from 'classnames';
-import { useIntl, useRouteMeta, useTabMeta } from 'dumi';
+import { useRouteMeta, useTabMeta } from 'dumi';
 import type { ReactNode } from 'react';
-import React, { useContext, useLayoutEffect, useMemo } from 'react';
+import React, { useLayoutEffect, useMemo } from 'react';
 import useLayoutState from '../../../hooks/useLayoutState';
 import useLocation from '../../../hooks/useLocation';
 import PrevAndNext from '../../common/PrevAndNext';
 import type { DemoContextProps } from '../DemoContext';
 import DemoContext from '../DemoContext';
-import Footer from '../Footer';
-import SiteContext from '../SiteContext';
+// import Footer from '../Footer';
 
 const useStyle = createStyles(({ token, css }) => {
   const { antCls } = token;
@@ -48,9 +47,9 @@ const useStyle = createStyles(({ token, css }) => {
         }
       }
     `,
+    // top: ${token.headerHeight + token.contentMarginTop}px;
     tocWrapper: css`
       position: fixed;
-      top: ${token.headerHeight + token.contentMarginTop}px;
       inset-inline-end: 0;
       width: 160px;
       margin: 0 0 12px 0;
@@ -109,10 +108,10 @@ const Content: React.FC<{ children: ReactNode }> = ({ children }) => {
   const meta = useRouteMeta();
   const tab = useTabMeta();
   const { pathname, hash } = useLocation();
-  const { formatMessage } = useIntl();
+  // const { formatMessage } = useIntl();
   const { styles } = useStyle();
   const token = useTheme();
-  const { direction, isMobile } = useContext(SiteContext);
+  // const { direction, isMobile } = useContext(SiteContext);
 
   const [showDebug, setShowDebug] = useLayoutState(false);
   const debugDemos = useMemo(
@@ -189,7 +188,7 @@ const Content: React.FC<{ children: ReactNode }> = ({ children }) => {
           <div style={{ minHeight: 'calc(100vh - 64px)' }}>{children}</div>
         </article>
         <PrevAndNext />
-        <Footer />
+        {/* <Footer /> */}
       </Col>
     </DemoContext.Provider>
   );

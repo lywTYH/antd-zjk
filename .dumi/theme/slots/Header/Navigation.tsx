@@ -1,13 +1,11 @@
-import { MenuOutlined } from '@ant-design/icons';
 import { createStyles, css } from 'antd-style';
-import { FormattedMessage, useFullSidebarData, useLocation } from 'dumi';
+import { useLocation } from 'dumi';
 import * as React from 'react';
 import type { MenuProps } from '../../../../dist';
 import { Menu } from '../../../../dist';
 import useLocale from '../../../hooks/useLocale';
 import Link from '../../common/Link';
 import * as utils from '../../utils';
-import { getEcosystemGroup } from './More';
 import type { SharedProps } from './interface';
 
 // ============================= Theme =============================
@@ -113,18 +111,9 @@ export interface NavigationProps extends SharedProps {
   onDirectionChange: () => void;
 }
 
-export default ({
-  isZhCN,
-  isMobile,
-  responsive,
-  directionText,
-  onLangChange,
-  onDirectionChange,
-}: NavigationProps) => {
+export default ({ isZhCN, isMobile }: NavigationProps) => {
   const { pathname, search } = useLocation();
   const [locale] = useLocale(locales);
-
-  const sidebarData = useFullSidebarData();
 
   const { styles } = useStyle();
 
@@ -142,63 +131,7 @@ export default ({
     activeMenuItem = 'docs/resources';
   }
 
-  let additional: MenuProps['items'];
-
-  const additionalItems: MenuProps['items'] = [
-    {
-      label: (
-        <a
-          href="https://github.com/ant-design/ant-design"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-      ),
-      key: 'github',
-    },
-    {
-      label: <FormattedMessage id="app.header.lang" />,
-      onClick: onLangChange,
-      key: 'switch-lang',
-    },
-    {
-      label: directionText,
-      onClick: onDirectionChange,
-      key: 'switch-direction',
-    },
-    ...getEcosystemGroup(),
-  ];
-
-  if (isMobile) {
-    additional = additionalItems;
-  } else if (responsive === 'crowded') {
-    additional = [
-      {
-        label: <MenuOutlined />,
-        key: 'additional',
-        children: [...additionalItems],
-      },
-    ];
-  }
-
   const items: MenuProps['items'] = [
-    // {
-    //   label: (
-    //     <Link to={utils.getLocalizedPathname('/docs/spec/introduce', isZhCN, search)}>
-    //       {locale.design}
-    //     </Link>
-    //   ),
-    //   key: 'docs/spec',
-    // },
-    // {
-    //   label: (
-    //     <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN, search)}>
-    //       {locale.development}
-    //     </Link>
-    //   ),
-    //   key: 'docs/react',
-    // },
     {
       label: (
         <Link to={utils.getLocalizedPathname('/components/overview/', isZhCN, search)}>
@@ -207,15 +140,6 @@ export default ({
       ),
       key: 'components',
     },
-    // {
-    //   label: (
-    //     <Link to={utils.getLocalizedPathname('/docs/resources', isZhCN, search)}>
-    //       {locale.resources}
-    //     </Link>
-    //   ),
-    //   key: 'docs/resources',
-    // },
-    ...(additional ?? []),
   ];
 
   return (

@@ -8,7 +8,7 @@ import Sidebar from '../../slots/Sidebar';
 const useStyle = createStyles(({ css, token }) => ({
   main: css`
     display: flex;
-    margin-top: ${token.contentMarginTop}px;
+    margin-top: 20px;
   `,
 }));
 

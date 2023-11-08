@@ -6,7 +6,6 @@ import DumiSearchBar from 'dumi/theme-default/slots/SearchBar';
 import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { Col, Popover, Row } from '../../../../dist';
 
-import useLocale from '../../../hooks/useLocale';
 import * as utils from '../../utils';
 import type { SiteContextProps } from '../SiteContext';
 import SiteContext from '../SiteContext';
@@ -16,20 +15,6 @@ import Navigation from './Navigation';
 
 const RESPONSIVE_XS = 1120;
 const RESPONSIVE_SM = 1200;
-
-const locales = {
-  cn: {
-    message:
-      '语雀公益计划：大学生认证教育邮箱，即可免费获得语雀会员。语雀，支付宝匠心打造的在线文档平台。',
-    shortMessage: '支付宝语雀 · 大学生公益计划火热进行中！',
-    more: '了解更多',
-  },
-  en: {
-    message: '',
-    shortMessage: '',
-    more: '',
-  },
-};
 
 const useStyle = createStyles(({ token, css }) => {
   const searchIconColor = '#ced4d9';
@@ -146,7 +131,6 @@ interface HeaderState {
 
 // ================================= Header =================================
 const Header: React.FC = () => {
-  const [, lang] = useLocale(locales);
   const [headerState, setHeaderState] = useState<HeaderState>({
     menuVisible: false,
     windowWidth: 1400,
@@ -232,7 +216,7 @@ const Header: React.FC = () => {
   const { menuVisible, windowWidth, searching } = headerState;
 
   const isHome = ['', 'index', 'index-cn'].includes(pathname);
-  const isZhCN = lang === 'cn';
+  const isZhCN = true;
   const isRTL = direction === 'rtl';
   let responsive: null | 'narrow' | 'crowded' = null;
   if (windowWidth < RESPONSIVE_XS) {

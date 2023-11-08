@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
+import { useNavigate } from 'dumi';
 import React, { useContext, useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { ConfigProvider } from '../../../../dist';
 import zhCN from '../../../../dist/antd/locale/zh_CN';
@@ -11,15 +12,16 @@ import useLocale from '../../../hooks/useLocale';
 import useLocation from '../../../hooks/useLocation';
 import GlobalStyles from '../../common/GlobalStyles';
 import { locales } from '../../constance';
-import Header from '../../slots/Header';
+// import Header from '../../slots/Header';
 import SiteContext from '../../slots/SiteContext';
 import '../../static/style';
-import IndexLayout from '../IndexLayout';
+// import IndexLayout from '../IndexLayout';
 import SidebarLayout from '../SidebarLayout';
 
 function DocLayout() {
   const outlet = useOutlet();
   const location = useLocation();
+  const navigate = useNavigate();
   const { pathname, hash } = location;
   const [locale, lang] = useLocale(locales);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -43,6 +45,15 @@ function DocLayout() {
     }
   }, []);
 
+  useEffect(() => {
+    if (
+      ['', '/'].some((path) => path === pathname) ||
+      ['/index'].some((path) => pathname.startsWith(path))
+    ) {
+      navigate('/components/overview');
+    }
+  }, [pathname]);
+
   // handle hash change or visit page hash from Link component, and jump after async chunk loaded
   useEffect(() => {
     const id = hash.replace('#', '');
@@ -55,11 +66,12 @@ function DocLayout() {
       ['', '/'].some((path) => path === pathname) ||
       ['/index'].some((path) => pathname.startsWith(path))
     ) {
-      return (
-        <IndexLayout title={locale.title} desc={locale.description}>
-          {outlet}
-        </IndexLayout>
-      );
+      return;
+      // return (
+      //   <IndexLayout title={locale.title} desc={locale.description}>
+      //     {outlet}
+      //   </IndexLayout>
+      // );
     }
     if (pathname.startsWith('/theme-editor')) {
       return outlet;
@@ -83,7 +95,7 @@ function DocLayout() {
       </Helmet>
       <ConfigProvider direction={direction} locale={lang === 'cn' ? zhCN : undefined}>
         <GlobalStyles />
-        <Header />
+        {/* <Header /> */}
         {content}
       </ConfigProvider>
     </>
