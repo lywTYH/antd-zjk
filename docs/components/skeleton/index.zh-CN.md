@@ -63,7 +63,7 @@ title: Skeleton
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | active | 是否展示动画效果 | boolean | false |  |
-| block | 将按钮宽度调整为其父宽度的选项 | boolean | false | 4.17.0 |
+| block | 将按钮宽度调整为其父宽度的选项 | boolean | false |  |
 | shape | 指定按钮的形状 | `circle` \| `round` \| `square` \| `default` | - |  |
 | size | 设置按钮的大小 | `large` \| `small` \| `default` | - |  |
 

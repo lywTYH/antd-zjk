@@ -38,7 +38,7 @@ demo:
 | className | Drawer 容器外层 className 设置，如果需要设置最外层，请使用 rootClassName | string | - |  |
 | classNames | 配置抽屉内置模块的 className | `header?: string; body?: string; footer?: string; mask?: string; wrapper?: string;` | - |  |
 | styles | 配置抽屉内置模块的 style | `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties; wrapper?: CSSProperties;` | - |  |
-| closeIcon | 自定义关闭图标。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 | boolean \| ReactNode | &lt;CloseOutlined /> |  |
+| closeIcon | 自定义关闭图标。设置为 `null` 或 `false` 时隐藏关闭按钮 | boolean \| ReactNode | &lt;CloseOutlined /> |  |
 | contentWrapperStyle | 可用于设置 Drawer 包裹内容部分的样式 | CSSProperties | - |  |
 | destroyOnClose | 关闭时销毁 Drawer 里的子元素 | boolean | false |  |
 | extra | 抽屉右上角的操作区域 | ReactNode | - |  |

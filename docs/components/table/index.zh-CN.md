@@ -117,7 +117,7 @@ const columns = [
 | showSorterTooltip | 表头是否显示下一次排序的 tooltip 提示。当参数类型为对象时，将被设置为 Tooltip 的属性 | boolean \| [Tooltip props](/components/tooltip-cn) | true |  |
 | size | 表格大小 | `large` \| `middle` \| `small` | `large` |  |
 | sortDirections | 支持的排序方式，取值为 `ascend` `descend` | Array | \[`ascend`, `descend`] |  |
-| sticky | 设置粘性头部和滚动条 | boolean \| `{offsetHeader?: number, offsetScroll?: number, getContainer?: () => HTMLElement}` | - | 4.6.0 (getContainer: ) |
+| sticky | 设置粘性头部和滚动条 | boolean \| `{offsetHeader?: number, offsetScroll?: number, getContainer?: () => HTMLElement}` | - |  |
 | summary | 总结栏 | (currentData) => ReactNode | - |  |
 | tableLayout | 表格元素的 [table-layout] 属性，设为 `fixed` 表示内容不会影响列的布局 | - \| `auto` \| `fixed` | 无<hr />固定表头/列或使用了 `column.ellipsis` 时，默认值为 `fixed` |  |
 | title | 表格标题 | function(currentPageData) | - |  |
@@ -182,7 +182,7 @@ const columns = [
 | sortDirections | 支持的排序方式，覆盖 `Table` 中 `sortDirections`， 取值为 `ascend` `descend` | Array | \[`ascend`, `descend`] |  |
 | sorter | 排序函数，本地排序使用一个函数。需要服务端排序可设为 `true`（单列排序） 或 `{ multiple: number }`（多列排序） | function \| boolean \| { compare: function, multiple: number } | - |  |
 | sortOrder | 排序的受控属性，外界可用此控制列的排序，可设置为 `ascend` `descend` `null` | `ascend` \| `descend` \| null | - |  |
-| sortIcon | 自定义 sort 图标 | (props: { sortOrder }) => ReactNode | - | 5.6.0 |
+| sortIcon | 自定义 sort 图标 | (props: { sortOrder }) => ReactNode | - |   |
 | title | 列头显示文字（函数用法 `3.10.0` 后支持） | ReactNode \| ({ sortOrder, sortColumn, filters }) => ReactNode | - |  |
 | width | 列宽度 | string \| number | - |  |
 | onCell | 设置单元格属性 | function(record, rowIndex) | - |  |

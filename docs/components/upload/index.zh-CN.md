@@ -39,10 +39,6 @@ demo:
 <code src="./demo/crop-image.tsx">上传前裁切图片</code>
 <code src="./demo/customize-progress-bar.tsx">自定义进度条样式</code>
 
-<!-- <code src="./demo/directory.tsx">文件夹上传</code> -->
-<!-- <code src="./demo/file-type.tsx" debug>自定义显示 icon</code> -->
-<!-- <code src="./demo/component-token.tsx" debug>组件 Token</code> -->
-
 ## API
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -60,7 +56,7 @@ demo:
 | iconRender | 自定义显示 icon | (file: UploadFile, listType?: UploadListType) => ReactNode | - |  |
 | isImageUrl | 自定义缩略图是否使用 &lt;img /> 标签进行显示 | (file: UploadFile) => boolean |  |  |
 | itemRender | 自定义上传列表项 | (originNode: ReactElement, file: UploadFile, fileList: object\[], actions: { download: function, preview: function, remove: function }) => React.ReactNode | - |  |
-| listType | 上传列表的内建样式，支持四种基本样式 `text`, `picture`, `picture-card` 和 `picture-circle` | string | `text` | `picture-circle` |
+| listType | 上传列表的内建样式，支持四种基本样式 `text`, `picture`, `picture-card` 和 `picture-circle` | string | `text` |  |
 | maxCount | 限制上传数量。当为 1 时，始终用最新上传的文件代替当前文件 | number | - |  |
 | method | 上传请求的 http method | string | `post` |  |
 | multiple | 是否支持多选文件。开启后按住 ctrl 可选择多个文件 | boolean | false |  |

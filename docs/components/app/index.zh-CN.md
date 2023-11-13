@@ -74,59 +74,14 @@ App 组件只能在 `ConfigProvider` 之下才能使用 Design Token， 如果�
 </App>
 ```
 
-### 全局场景（redux 场景）
-
-```tsx
-// Entry component
-import { App } from 'antd';
-import type { MessageInstance } from 'antd/es/message/interface';
-import type { ModalStaticFunctions } from 'antd/es/modal/confirm';
-import type { NotificationInstance } from 'antd/es/notification/interface';
-
-let message: MessageInstance;
-let notification: NotificationInstance;
-let modal: Omit<ModalStaticFunctions, 'warn'>;
-
-export default () => {
-  const staticFunction = App.useApp();
-  message = staticFunction.message;
-  modal = staticFunction.modal;
-  notification = staticFunction.notification;
-  return null;
-};
-
-export { message, modal, notification };
-```
-
-```tsx
-// sub page
-import { Button, Space } from 'antd';
-
-import { message } from './store';
-
-export default () => {
-  const showMessage = () => {
-    message.success('Success!');
-  };
-
-  return (
-    <Space>
-      <Button type="primary" onClick={showMessage}>
-        Open message
-      </Button>
-    </Space>
-  );
-};
-```
-
 ## API
 
 ### App
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| message | App 内 Message 的全局配置 | [MessageConfig](/components/message-cn/#messageconfig) | - | 5.3.0 |
-| notification | App 内 Notification 的全局配置 | [NotificationConfig](/components/notification-cn/#notificationconfig) | - | 5.3.0 |
+| message | App 内 Message 的全局配置 | [MessageConfig](/components/message-cn/#messageconfig) | - |  |
+| notification | App 内 Notification 的全局配置 | [NotificationConfig](/components/notification-cn/#notificationconfig) | - |  |
 
 ## 主题变量（Design Token）
 

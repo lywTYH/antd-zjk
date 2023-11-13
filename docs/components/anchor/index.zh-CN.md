@@ -42,8 +42,8 @@ group:
 | onChange | 监听锚点链接改变 | (currentActiveLink: string) => void | - |  |
 | onClick | `click` 事件的 handler | (e: MouseEvent, link: object) => void | - |  |
 | items | 数据化配置选项内容，支持通过 children 嵌套 | { key, href, title, target, children }\[] | - |  |
-| direction | 设置导航方向 | `vertical` \| `horizontal` | `vertical` | 5.2.0 |
-| replace | 替换浏览器历史记录中项目的 href 而不是推送它 | boolean | false | 5.7.0 |
+| direction | 设置导航方向 | `vertical` \| `horizontal` | `vertical` |  |
+| replace | 替换浏览器历史记录中项目的 href 而不是推送它 | boolean | false |  |
 
 ### AnchorItem
 
@@ -54,7 +54,7 @@ group:
 | target | 该属性指定在何处显示链接的资源 | string | - |  |
 | title | 文字内容 | ReactNode | - |  |
 | children | 嵌套的 Anchor Link，`注意：水平方向该属性不支持` | [AnchorItem](#anchoritem)\[] | - |  |
-| replace | 替换浏览器历史记录中的项目 href 而不是推送它 | boolean | false | 5.7.0 |
+| replace | 替换浏览器历史记录中的项目 href 而不是推送它 | boolean | false |  |
 
 ### Link Props
 

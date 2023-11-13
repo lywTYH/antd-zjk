@@ -33,10 +33,10 @@ demo:
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| closeIcon | 自定义关闭按钮。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 | boolean \| ReactNode | false | 4.4.0 |
+| closeIcon | 自定义关闭按钮。设置为 `null` 或 `false` 时隐藏关闭按钮 | boolean \| ReactNode | false |  |
 | color | 标签色 | string | - |  |
 | icon | 设置图标 | ReactNode | - |  |
-| bordered | 是否有边框 | boolean | true | 5.4.0 |
+| bordered | 是否有边框 | boolean | true |  |
 | onClose | 关闭时的回调（可通过 `e.preventDefault()` 来阻止默认行为） | (e) => void | - |  |
 
 ### Tag.CheckableTag

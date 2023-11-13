@@ -40,7 +40,7 @@ return <Breadcrumb routes={[{ breadcrumbName: 'sample' }]} />;
 | --- | --- | --- | --- | --- |
 | itemRender | 自定义链接函数，和 react-router 配置使用 | (route, params, routes, paths) => ReactNode | - |  |
 | params | 路由的参数 | object | - |  |
-| items | 路由栈信息 | [items\[\]](#ItemType) | - | 5.3.0 |
+| items | 路由栈信息 | [items\[\]](#ItemType) | - |  |
 | separator | 分隔符自定义 | ReactNode | `/` |  |
 
 ### ItemType
@@ -55,9 +55,9 @@ return <Breadcrumb routes={[{ breadcrumbName: 'sample' }]} />;
 | dropdownProps | 弹出下拉菜单的自定义配置 | [Dropdown](/components/dropdown-cn) | - |  |
 | href | 链接的目的地，不能和 `path` 共用 | string | - |  |
 | path | 拼接路径，每一层都会拼接前一个 `path` 信息。不能和 `href` 共用 | string | - |  |
-| menu | 菜单配置项 | [MenuProps](/components/menu-cn/#api) | - | 4.24.0 |
+| menu | 菜单配置项 | [MenuProps](/components/menu-cn/#api) | - |  |
 | onClick | 单击事件 | (e:MouseEvent) => void | - |  |
-| title | 名称 | ReactNode | - | 5.3.0 |
+| title | 名称 | ReactNode | - |  |
 
 ### SeparatorType
 
@@ -68,10 +68,10 @@ const item = {
 };
 ```
 
-| 参数      | 说明           | 类型        | 默认值 | 版本  |
-| --------- | -------------- | ----------- | ------ | ----- |
-| type      | 标记为分隔符   | `separator` |        | 5.3.0 |
-| separator | 要显示的分隔符 | ReactNode   | `/`    | 5.3.0 |
+| 参数      | 说明           | 类型        | 默认值 | 版本 |
+| --------- | -------------- | ----------- | ------ | ---- |
+| type      | 标记为分隔符   | `separator` |        |      |
+| separator | 要显示的分隔符 | ReactNode   | `/`    |      |
 
 ### 和 browserHistory 配合
 

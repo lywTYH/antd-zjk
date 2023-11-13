@@ -473,10 +473,10 @@ type Rule = RuleConfig | ((form: FormInstance) => RuleConfig);
 
 #### WatchOptions
 
-| 名称     | 说明                                  | 类型         | 默认值                 | 版本  |
-| -------- | ------------------------------------- | ------------ | ---------------------- | ----- |
-| form     | 指定 Form 实例                        | FormInstance | 当前 context 中的 Form | 5.4.0 |
-| preserve | 是否监视没有对应的 `Form.Item` 的字段 | boolean      | false                  | 5.4.0 |
+| 名称     | 说明                                  | 类型         | 默认值                 | 版本 |
+| -------- | ------------------------------------- | ------------ | ---------------------- | ---- |
+| form     | 指定 Form 实例                        | FormInstance | 当前 context 中的 Form |      |
+| preserve | 是否监视没有对应的 `Form.Item` 的字段 | boolean      | false                  |      |
 
 ## 主题变量（Design Token）
 

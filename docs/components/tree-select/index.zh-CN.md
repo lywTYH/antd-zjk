@@ -36,8 +36,8 @@ demo:
 | bordered | 是否显示边框 | boolean | true |  |
 | defaultValue | 指定默认选中的条目 | string \| string\[] | - |  |
 | disabled | 是否禁用 | boolean | false |  |
-| popupClassName | 下拉菜单的 className 属性 | string | - | 4.23.0 |
-| popupMatchSelectWidth | 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 | boolean \| number | true | 5.5.0 |
+| popupClassName | 下拉菜单的 className 属性 | string | - |  |
+| popupMatchSelectWidth | 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 | boolean \| number | true |  |
 | dropdownRender | 自定义下拉框内容 | (originNode: ReactNode, props) => ReactNode | - |  |
 | dropdownStyle | 下拉菜单的样式 | object | - |  |
 | fieldNames | 自定义节点 label、value、children 的字段 | object | { label: `label`, value: `value`, children: `children` } |  |
@@ -46,7 +46,7 @@ demo:
 | labelInValue | 是否把每个选项的 label 包装到 value 中，会把 value 类型从 `string` 变为 {value: string, label: ReactNode, halfChecked(treeCheckStrictly 时有效): string\[] } 的格式 | boolean | false |  |
 | listHeight | 设置弹窗滚动高度 | number | 256 |  |
 | loadData | 异步加载数据。 | function(node) | - |  |
-| maxTagCount | 最多显示多少个 tag，响应式模式会对性能产生损耗 | number \| `responsive` | - | responsive: 4.10 |
+| maxTagCount | 最多显示多少个 tag，响应式模式会对性能产生损耗 | number \| `responsive` | - |  |
 | maxTagPlaceholder | 隐藏 tag 时显示的内容 | ReactNode \| function(omittedValues) | - |  |
 | maxTagTextLength | 最大显示的 tag 文本长度 | number | - |  |
 | multiple | 支持多选（当设置 treeCheckable 时自动变为 true） | boolean | false |  |
@@ -59,7 +59,7 @@ demo:
 | size | 选择框大小 | `large` \| `middle` \| `small` | - |  |
 | status | 设置校验状态 | 'error' \| 'warning' | - |  |
 | suffixIcon | 自定义的选择框后缀图标 | ReactNode | `<DownOutlined />` |  |
-| switcherIcon | 自定义树节点的展开/折叠图标 | ReactNode \| ((props: AntTreeNodeProps) => ReactNode) | - | renderProps: |
+| switcherIcon | 自定义树节点的展开/折叠图标 | ReactNode \| ((props: AntTreeNodeProps) => ReactNode) | - |  |
 | tagRender | 自定义 tag 内容，多选时生效 | (props) => ReactNode | - |  |
 | treeCheckable | 显示 Checkbox | boolean | false |  |
 | treeCheckStrictly | `checkable` 状态下节点选择完全受控（父子节点选中状态不再关联），会使得 `labelInValue` 强制为 true | boolean | false |  |
@@ -67,7 +67,7 @@ demo:
 | treeDataSimpleMode | 使用简单格式的 treeData，具体设置参考可设置的类型 (此时 treeData 应变为这样的数据结构: \[{id:1, pId:0, value:'1', title:"test1",...},...]， `pId` 是父节点的 id) | boolean \| object&lt;{ id: string, pId: string, rootPId: string }> | false |  |
 | treeDefaultExpandAll | 默认展开所有树节点 | boolean | false |  |
 | treeDefaultExpandedKeys | 默认展开的树节点 | string\[] | - |  |
-| treeExpandAction | 点击节点 title 时的展开逻辑，可选：false \| `click` \| `doubleClick` | string \| boolean | false | 4.21.0 |
+| treeExpandAction | 点击节点 title 时的展开逻辑，可选：false \| `click` \| `doubleClick` | string \| boolean | false |  |
 | treeExpandedKeys | 设置展开的树节点 | string\[] | - |  |
 | treeIcon | 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式 | boolean | false |  |
 | treeLine | 是否展示线条样式 | boolean \| object | false |  |

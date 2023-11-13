@@ -36,14 +36,14 @@ group: 数据展示
 | --- | --- | --- | --- | --- |
 | color | 自定义小圆点的颜色 | string | - |  |
 | count | 展示的数字，大于 overflowCount 时显示为 `${overflowCount}+`，为 0 时隐藏 | ReactNode | - |  |
-| classNames | 语义化结构 class | Record<SemanticDOM, string> | - | 5.7.0 |
+| classNames | 语义化结构 class | Record<SemanticDOM, string> | - |  |
 | dot | 不展示数字，只有一个小红点 | boolean | false |  |
 | offset | 设置状态点的位置偏移 | \[number, number] | - |  |
 | overflowCount | 展示封顶的数字值 | number | 99 |  |
 | showZero | 当数值为 0 时，是否展示 Badge | boolean | false |  |
 | size | 在设置了 `count` 的前提下有效，设置小圆点的大小 | `default` \| `small` | - | - |
 | status | 设置 Badge 为状态点 | `success` \| `processing` \| `default` \| `error` \| `warning` | - |  |
-| styles | 语义化结构 style | Record<SemanticDOM, CSSProperties> | - | 5.7.0 |
+| styles | 语义化结构 style | Record<SemanticDOM, CSSProperties> | - |  |
 | text | 在设置了 `status` 的前提下有效，设置状态点的文本 | ReactNode | - |  |
 | title | 设置鼠标放在状态点上时显示的文字 | string | - |  |
 
@@ -57,10 +57,10 @@ group: 数据展示
 
 ### `styles` 和 `classNames` 属性
 
-| 名称      | 说明         | 版本  |
-| --------- | ------------ | ----- |
-| root      | 设置根元素   | 5.7.0 |
-| indicator | 设置徽标元素 | 5.7.0 |
+| 名称      | 说明         | 版本 |
+| --------- | ------------ | ---- |
+| root      | 设置根元素   |      |
+| indicator | 设置徽标元素 |      |
 
 ## 主题变量（Design Token）
 

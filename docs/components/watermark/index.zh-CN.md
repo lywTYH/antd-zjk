@@ -65,7 +65,7 @@ demo:
 <Watermark
   height={30}
   width={130}
-  content="Ant Design"
+  content="content"
   image="https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*lkAoRbywo0oAAAAAAAAAAAAADrJ8AQ/original"
 >
   <div style={{ height: 500 }} />

@@ -37,12 +37,12 @@ demo:
 | okButtonProps | ok 按钮 props | [ButtonProps](/components/button#api) | - |  |
 | okText | 确认按钮文字 | string | `确定` |  |
 | okType | 确认按钮类型 | string | `primary` |  |
-| showCancel | 是否显示取消按钮 | boolean | true | 4.18.0 |
+| showCancel | 是否显示取消按钮 | boolean | true |  |
 | title | 确认框标题 | ReactNode \| () => ReactNode | - |  |
 | description | 确认内容的详细描述 | ReactNode \| () => ReactNode | - |  |
 | onCancel | 点击取消的回调 | function(e) | - |  |
 | onConfirm | 点击确认的回调 | function(e) | - |  |
-| onPopupClick | 弹出气泡点击事件 | function(e) | - | 5.5.0 |
+| onPopupClick | 弹出气泡点击事件 | function(e) | - |  |
 
 更多属性请参考 [Tooltip](/components/tooltip/#api)。
 

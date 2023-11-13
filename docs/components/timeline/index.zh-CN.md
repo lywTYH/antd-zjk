@@ -48,7 +48,7 @@ return (
 | pending | 指定最后一个幽灵节点是否存在或内容 | boolean \| ReactNode | false |
 | pendingDot | 当最后一个幽灵节点存在時，指定其时间图点 | ReactNode | &lt;LoadingOutlined /&gt; |
 | reverse | 节点排序 | boolean | false |
-| items | 选项配置 | [Items](#Items)[] | 5.2.0 |
+| items | 选项配置 | [Items](#Items)[] |  |
 
 ### Items
 

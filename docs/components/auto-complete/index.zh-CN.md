@@ -48,7 +48,7 @@ demo:
 | defaultOpen | 是否默认展开下拉菜单 | boolean | - |  |
 | defaultValue | 指定默认选中的条目 | string | - |  |
 | disabled | 是否禁用 | boolean | false |  |
-| popupClassName | 下拉菜单的 className 属性 | string | - | 4.23.0 |
+| popupClassName | 下拉菜单的 className 属性 | string | - |  |
 | dropdownMatchSelectWidth | 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 | boolean \| number | true |  |
 | filterOption | 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 true，反之则返回 false | boolean \| function(inputValue, option) | true |  |
 | getPopupContainer | 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。 | function(triggerNode) | () => document.body |  |
@@ -64,7 +64,7 @@ demo:
 | onFocus | 获得焦点时的回调 | function() | - |  |
 | onSearch | 搜索补全项的时候调用 | function(value) | - |  |
 | onSelect | 被选中时调用，参数为选中项的 value 值 | function(value, option) | - |  |
-| onClear | 清除内容时的回调 | function | - | 4.6.0 |
+| onClear | 清除内容时的回调 | function | - |  |
 
 ## 方法
 

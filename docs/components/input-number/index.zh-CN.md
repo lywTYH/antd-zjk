@@ -40,7 +40,7 @@ demo:
 | decimalSeparator | 小数点 | string | - | - |
 | defaultValue | 初始值 | number | - | - |
 | disabled | 禁用 | boolean | false | - |
-| formatter | 指定输入框展示值的格式 | function(value: number \| string, info: { userTyping: boolean, input: string }): string | - | info: |
+| formatter | 指定输入框展示值的格式 | function(value: number \| string, info: { userTyping: boolean, input: string }): string | - |  |
 | keyboard | 是否启用键盘快捷行为 | boolean | true |  |
 | max | 最大值 | number | [Number.MAX_SAFE_INTEGER] | - |
 | min | 最小值 | number | [Number.MIN_SAFE_INTEGER] | - |
