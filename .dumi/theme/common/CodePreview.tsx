@@ -5,6 +5,7 @@ import toReactElement from 'jsonml-to-react-element';
 import JsonML from 'jsonml.js/lib/utils';
 import Prism from 'prismjs';
 import React, { useContext, useEffect, useMemo } from 'react';
+import { previewCodeReplace } from '../utils';
 import LiveCode from './LiveCode';
 
 const useStyle = createStyles(({ token, css }) => {
@@ -95,8 +96,8 @@ const CodePreview: React.FC<CodePreviewProps> = ({
   } as Record<'tsx' | 'jsx' | 'style', string>;
   useEffect(() => {
     const codes = {
-      tsx: Prism.highlight(sourceCode, Prism.languages.javascript, 'jsx'),
-      jsx: Prism.highlight(jsxCode, Prism.languages.javascript, 'jsx'),
+      tsx: Prism.highlight(previewCodeReplace(sourceCode), Prism.languages.javascript, 'jsx'),
+      jsx: Prism.highlight(previewCodeReplace(jsxCode), Prism.languages.javascript, 'jsx'),
       style: Prism.highlight(styleCode, Prism.languages.css, 'css'),
     };
     // 去掉空的代码类型

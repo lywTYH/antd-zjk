@@ -1,6 +1,7 @@
 import flatten from 'lodash/flatten';
 import flattenDeep from 'lodash/flattenDeep';
 
+import pkg from '../../package.json';
 import themeConfig from './themeConfig';
 
 interface Meta {
@@ -209,3 +210,12 @@ export function getMetaDescription(jml?: any[] | null) {
 }
 
 export const getThemeConfig = () => themeConfig;
+
+export const getPKGValueByKey = (key: string) =>
+  (pkg as Object).hasOwnProperty(key) ? pkg[key] : '';
+
+export function previewCodeReplace(str: string) {
+  str = str.replace(/\'antd\'/g, `'${getPKGValueByKey('name') || 'csces-antd'}'`);
+  str = str.replace(/\'antd\/es/g, `'${getPKGValueByKey('name') || 'csces-antd'}`);
+  return str;
+}

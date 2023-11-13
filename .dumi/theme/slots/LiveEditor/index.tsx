@@ -2,12 +2,13 @@ import { LiveContext } from 'dumi';
 import { highlight, languages } from 'prismjs';
 import React, { useContext } from 'react';
 import Editor from 'react-simple-code-editor';
+import { previewCodeReplace } from '../../utils';
 
 const LiveEditor = () => {
   const { code, onCodeChange } = useContext(LiveContext);
   return (
     <Editor
-      value={code ? code.replace('antd', 'csces-antd') : code}
+      value={code ? previewCodeReplace(code) : ''}
       readOnly={true}
       onValueChange={onCodeChange}
       highlight={(code) => highlight(code, languages.js, 'tsx')}
@@ -25,12 +26,5 @@ const LiveEditor = () => {
     />
   );
 };
-// `    position: relative;
-// text-align: left;
-// box-sizing: border-box;
-// padding: 0px;
-// overflow: hidden;
-// font-size: 13px;
-// line-height: 2;
-// font-family: ;`
+
 export default LiveEditor;

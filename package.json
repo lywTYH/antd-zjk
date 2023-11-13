@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "lyw",
   "type": "module",
-  "module": " y.js",
+  "module": "./index.js",
   "typings": "./index.d.ts",
   "scripts": {
     "build:components": "gulp build:components",

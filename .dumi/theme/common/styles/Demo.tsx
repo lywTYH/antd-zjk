@@ -217,6 +217,12 @@ const GlobalDemoStyles: React.FC = () => {
             &-expand {
               display: block;
             }
+
+            pre {
+              margin: 0;
+              padding: 0;
+              background: #ffffff;
+            }
           }
 
           .highlight {
@@ -225,7 +231,7 @@ const GlobalDemoStyles: React.FC = () => {
             pre {
               margin: 0;
               padding: 0;
-              background: ${token.colorBgContainer};
+              background: #ffffff;
             }
 
             &:not(:first-of-type) {
