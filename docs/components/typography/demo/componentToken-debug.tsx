@@ -43,20 +43,6 @@ const App: React.FC = () => (
       </Paragraph>
 
       <Paragraph>
-        <ul>
-          <li>
-            <Link href="/docs/spec/proximity">Principles</Link>
-          </li>
-          <li>
-            <Link href="/docs/spec/overview">Patterns</Link>
-          </li>
-          <li>
-            <Link href="/docs/resources">Resource Download</Link>
-          </li>
-        </ul>
-      </Paragraph>
-
-      <Paragraph>
         Press <Text keyboard>Esc</Text> to exit...
       </Paragraph>
 
@@ -76,20 +62,6 @@ const App: React.FC = () => (
       <Paragraph>
         我们提供完善的设计原则、最佳实践和设计资源文件（<Text code>Sketch</Text> 和
         <Text code>Axure</Text>），来帮助业务快速设计出高质量的产品原型。
-      </Paragraph>
-
-      <Paragraph>
-        <ul>
-          <li>
-            <Link href="/docs/spec/proximity-cn">设计原则</Link>
-          </li>
-          <li>
-            <Link href="/docs/spec/overview-cn">设计模式</Link>
-          </li>
-          <li>
-            <Link href="/docs/resources-cn">设计资源</Link>
-          </li>
-        </ul>
       </Paragraph>
 
       <Paragraph>

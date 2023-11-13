@@ -3,8 +3,6 @@ category: Components
 subtitle: 步骤条
 group: 导航
 title: Steps
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*677sTqCpE3wAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*cFsBQLA0b7UAAAAAAAAAAAAADrJ8AQ/original
 ---
 
 引导用户按照流程完成任务的导航条。
@@ -38,8 +36,6 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*cFsBQLA0b7UAAA
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
 ### Steps
 
 整体步骤条。
@@ -51,14 +47,14 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*cFsBQLA0b7UAAA
 | direction | 指定步骤条方向。目前支持水平（`horizontal`）和竖直（`vertical`）两种方向 | string | `horizontal` |  |
 | initial | 起始序号，从 0 开始记数 | number | 0 |  |
 | labelPlacement | 指定标签放置位置，默认水平放图标右侧，可选 `vertical` 放图标下方 | string | `horizontal` |  |
-| percent | 当前 `process` 步骤显示的进度条进度（只对基本类型的 Steps 生效） | number | - | 4.5.0 |
+| percent | 当前 `process` 步骤显示的进度条进度（只对基本类型的 Steps 生效） | number | - |  |
 | progressDot | 点状步骤条，可以设置为一个 function，labelPlacement 将强制为 `vertical` | boolean \| (iconDot, {index, status, title, description}) => ReactNode | false |  |
 | responsive | 当屏幕宽度小于 `532px` 时自动变为垂直模式 | boolean | true |  |
 | size | 指定大小，目前支持普通（`default`）和迷你（`small`） | string | `default` |  |
 | status | 指定当前步骤的状态，可选 `wait` `process` `finish` `error` | string | `process` |  |
-| type | 步骤条类型，可选 `default` `navigation` `inline` | string | `default` | inline: 5.0 |
+| type | 步骤条类型，可选 `default` `navigation` `inline` | string | `default` |  |
 | onChange | 点击切换步骤时触发 | (current) => void | - |  |
-| items | 配置选项卡内容 | [StepItem](#stepitem) | [] | 4.24.0 |
+| items | 配置选项卡内容 | [StepItem](#stepitem) | [] |  |
 
 ### `type="inline"`
 
@@ -69,7 +65,7 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*cFsBQLA0b7UAAA
 | initial | 起始序号，从 0 开始记数 | number | 0 |  |
 | status | 指定当前步骤的状态，可选 `wait` `process` `finish` `error` | string | `process` |  |
 | onChange | 点击切换步骤时触发 | (current) => void | - |  |
-| items | 配置选项卡内容，不支持 `icon` `subtitle` | [StepItem](#stepitem) | [] | 4.24.0 |
+| items | 配置选项卡内容，不支持 `icon` `subtitle` | [StepItem](#stepitem) | [] |  |
 
 ### StepItem
 

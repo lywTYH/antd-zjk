@@ -4,8 +4,6 @@ subtitle: 图片
 group: 数据展示
 title: Image
 cols: 2
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*FbOCS6aFMeUAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*LVQ3R5JjjJEAAAAAAAAAAAAADrJ8AQ/original
 ---
 
 可预览的图片。
@@ -33,74 +31,70 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*LVQ3R5JjjJEAAA
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
 ### Image
 
-| 参数 | 说明 | 类型 | 默认值 | 版本 |
-| --- | --- | --- | --- | --- |
-| alt | 图像描述 | string | - | 4.6.0 |
-| fallback | 加载失败容错地址 | string | - | 4.6.0 |
-| height | 图像高度 | string \| number | - | 4.6.0 |
-| placeholder | 加载占位，为 `true` 时使用默认占位 | ReactNode | - | 4.6.0 |
-| preview | 预览参数，为 `false` 时禁用 | boolean \| [PreviewType](#previewtype) | true | 4.6.0 [PreviewType](#previewyype):4.7.0 |
-| src | 图片地址 | string | - | 4.6.0 |
-| width | 图像宽度 | string \| number | - | 4.6.0 |
-| onError | 加载错误回调 | (event: Event) => void | - | 4.12.0 |
-
-其他属性见 [&lt;img>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#Attributes)
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| alt | 图像描述 | string | - |
+| fallback | 加载失败容错地址 | string | - |
+| height | 图像高度 | string \| number | - |
+| placeholder | 加载占位，为 `true` 时使用默认占位 | ReactNode | - |
+| preview | 预览参数，为 `false` 时禁用 | boolean \| [PreviewType](#previewtype) | true |
+| src | 图片地址 | string | - |
+| width | 图像宽度 | string \| number | - |
+| onError | 加载错误回调 | (event: Event) => void | - |
 
 ### PreviewType
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | visible | 是否显示 | boolean | - | - |
-| src | 自定义预览 src | string | - | 4.10.0 |
-| getContainer | 指定预览挂载的节点，但依旧为全屏展示，false 为挂载在当前位置 | string \| HTMLElement \| (() => HTMLElement) \| false | - | 4.8.0 |
-| movable | 是否可移动 | boolean | true | 5.8.0 |
-| mask | 缩略图遮罩 | ReactNode | - | 4.9.0 |
-| maskClassName | 缩略图遮罩类名 | string | - | 4.11.0 |
-| rootClassName | 预览图的根 DOM 类名 | string | - | 5.4.0 |
+| src | 自定义预览 src | string | - |  |
+| getContainer | 指定预览挂载的节点，但依旧为全屏展示，false 为挂载在当前位置 | string \| HTMLElement \| (() => HTMLElement) \| false | - |  |
+| movable | 是否可移动 | boolean | true |  |
+| mask | 缩略图遮罩 | ReactNode | - |  |
+| maskClassName | 缩略图遮罩类名 | string | - |  |
+| rootClassName | 预览图的根 DOM 类名 | string | - |  |
 | scaleStep | `1 + scaleStep` 为缩放放大的每步倍数 | number | 0.5 | - |
-| minScale | 最小缩放倍数 | number | 1 | 5.7.0 |
-| maxScale | 最大放大倍数 | number | 50 | 5.7.0 |
-| closeIcon | 自定义关闭 Icon | React.ReactNode | - | 5.7.0 |
+| minScale | 最小缩放倍数 | number | 1 |  |
+| maxScale | 最大放大倍数 | number | 50 |  |
+| closeIcon | 自定义关闭 Icon | React.ReactNode | - |  |
 | forceRender | 强制渲染预览图 | boolean | - | - |
-| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: Omit<[ToolbarRenderInfoType](#toolbarrenderinfotype), 'current' \| 'total'>) => React.ReactNode | - | 5.7.0 |
-| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype) }) => React.ReactNode | - | 5.7.0 |
-| onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - | 5.7.0 |
+| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: Omit<[ToolbarRenderInfoType](#toolbarrenderinfotype), 'current' \| 'total'>) => React.ReactNode | - |  |
+| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype) }) => React.ReactNode | - |  |
+| onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - |  |
 | onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean) => void | - | - |
 
 ## PreviewGroup
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| preview | 预览参数，为 `false` 时禁用 | boolean \| [PreviewGroupType](#previewgrouptype) | true | 4.6.0 [PreviewGroupType](#previewgrouptype):4.7.0 |
-| items | 预览数组 | string[] \| { src: string, crossOrigin: string, ... }[] | - | 5.7.0 |
-| fallback | 加载失败容错地址 | string | - | 5.7.0 |
+| preview | 预览参数，为 `false` 时禁用 | boolean \| [PreviewGroupType](#previewgrouptype) | true |  |
+| items | 预览数组 | string[] \| { src: string, crossOrigin: string, ... }[] | - |  |
+| fallback | 加载失败容错地址 | string | - |  |
 
 ### PreviewGroupType
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | visible | 是否显示 | boolean | - | - |
-| getContainer | 指定预览挂载的节点，但依旧为全屏展示，false 为挂载在当前位置 | string \| HTMLElement \| (() => HTMLElement) \| false | - | 4.8.0 |
-| movable | 是否可移动 | boolean | true | 5.8.0 |
-| current | 当前预览图的 index | number | - | 4.12.0 |
-| mask | 缩略图遮罩 | ReactNode | - | 4.9.0 |
-| maskClassName | 缩略图遮罩类名 | string | - | 4.11.0 |
-| rootClassName | 预览图的根 DOM 类名 | string | - | 5.4.0 |
+| getContainer | 指定预览挂载的节点，但依旧为全屏展示，false 为挂载在当前位置 | string \| HTMLElement \| (() => HTMLElement) \| false | - |  |
+| movable | 是否可移动 | boolean | true |  |
+| current | 当前预览图的 index | number | - |  |
+| mask | 缩略图遮罩 | ReactNode | - |  |
+| maskClassName | 缩略图遮罩类名 | string | - |  |
+| rootClassName | 预览图的根 DOM 类名 | string | - |  |
 | scaleStep | `1 + scaleStep` 为缩放放大的每步倍数 | number | 0.5 | - |
-| minScale | 最小缩放倍数 | number | 1 | 5.7.0 |
-| maxScale | 最大放大倍数 | number | 50 | 5.7.0 |
-| closeIcon | 自定义关闭 Icon | React.ReactNode | - | 5.7.0 |
+| minScale | 最小缩放倍数 | number | 1 |  |
+| maxScale | 最大放大倍数 | number | 50 |  |
+| closeIcon | 自定义关闭 Icon | React.ReactNode | - |  |
 | forceRender | 强制渲染预览图 | boolean | - | - |
-| countRender | 自定义预览计数内容 | (current: number, total: number) => React.ReactNode | - | 4.20.0 |
-| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: [ToolbarRenderInfoType](#toolbarrenderinfotype)) => React.ReactNode | - | 5.7.0 |
-| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), current: number }) => React.ReactNode | - | 5.7.0 |
-| onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - | 5.7.0 |
-| onChange | 切换预览图的回调 | (current: number, prevCurrent: number) => void | - | 5.3.0 |
-| onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean, current: number) => void | - | current 参数 5.3.0 |
+| countRender | 自定义预览计数内容 | (current: number, total: number) => React.ReactNode | - |  |
+| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: [ToolbarRenderInfoType](#toolbarrenderinfotype)) => React.ReactNode | - |  |
+| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), current: number }) => React.ReactNode | - |  |
+| onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - |  |
+| onChange | 切换预览图的回调 | (current: number, prevCurrent: number) => void | - |  |
+| onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean, current: number) => void | - |  |
 
 ## Interface
 

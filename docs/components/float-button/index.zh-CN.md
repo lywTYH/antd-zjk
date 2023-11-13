@@ -3,14 +3,9 @@ category: Components
 group: 通用
 subtitle: 悬浮按钮
 title: FloatButton
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*HS-wTIIwu0kAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*a0hwTY_rOSUAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
-tag: New
 ---
-
-悬浮按钮。自 `5.0.0` 版本开始提供该组件。
 
 ## 何时使用
 
@@ -35,10 +30,6 @@ tag: New
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
-> 自 `antd@5.0.0` 版本开始提供该组件。
-
 ### 共同的 API
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -51,7 +42,7 @@ tag: New
 | onClick | 点击按钮时的回调 | (event) => void | - |  |
 | href | 点击跳转的地址，指定此属性 button 的行为和 a 链接一致 | string | - |  |
 | target | 相当于 a 标签的 target 属性，href 存在时生效 | string | - |  |
-| badge | 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性） | [BadgeProps](/components/badge-cn#api) | - | 5.4.0 |
+| badge | 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性） | [BadgeProps](/components/badge-cn#api) | - |  |
 
 ### FloatButton.Group
 

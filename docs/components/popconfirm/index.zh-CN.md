@@ -3,8 +3,6 @@ category: Components
 subtitle: 气泡确认框
 group: 反馈
 title: Popconfirm
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*sAGpRoBtTXcAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*HrFtQ6jJJFQAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
@@ -32,25 +30,23 @@ demo:
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| cancelButtonProps | cancel 按钮 props | [ButtonProps](/components/button-cn#api) | - |  |
+| cancelButtonProps | cancel 按钮 props | [ButtonProps](/components/button#api) | - |  |
 | cancelText | 取消按钮文字 | string | `取消` |  |
 | disabled | 阻止点击 Popconfirm 子元素时弹出确认框 | boolean | false |  |
 | icon | 自定义弹出气泡 Icon 图标 | ReactNode | &lt;ExclamationCircle /> |  |
-| okButtonProps | ok 按钮 props | [ButtonProps](/components/button-cn#api) | - |  |
+| okButtonProps | ok 按钮 props | [ButtonProps](/components/button#api) | - |  |
 | okText | 确认按钮文字 | string | `确定` |  |
 | okType | 确认按钮类型 | string | `primary` |  |
 | showCancel | 是否显示取消按钮 | boolean | true | 4.18.0 |
 | title | 确认框标题 | ReactNode \| () => ReactNode | - |  |
-| description | 确认内容的详细描述 | ReactNode \| () => ReactNode | - | 5.1.0 |
+| description | 确认内容的详细描述 | ReactNode \| () => ReactNode | - |  |
 | onCancel | 点击取消的回调 | function(e) | - |  |
 | onConfirm | 点击确认的回调 | function(e) | - |  |
 | onPopupClick | 弹出气泡点击事件 | function(e) | - | 5.5.0 |
 
-更多属性请参考 [Tooltip](/components/tooltip-cn/#api)。
+更多属性请参考 [Tooltip](/components/tooltip/#api)。
 
 ## 主题变量（Design Token）
 

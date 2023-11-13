@@ -3,8 +3,6 @@ category: Components
 group: 数据录入
 title: Cascader
 subtitle: 级联选择
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*tokLTp73TsQAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*5-ArSLl5UBsAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
@@ -37,12 +35,9 @@ demo:
 <code src="./demo/custom-dropdown.tsx">扩展菜单</code>
 <code src="./demo/placement.tsx">弹出位置</code>
 <code src="./demo/status.tsx">自定义状态</code>
-<code src="./demo/panel.tsx" version=">= 5.10.0">面板使用</code>
 <code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 ```jsx
 <Cascader options={options} onChange={onChange} />
@@ -50,7 +45,7 @@ demo:
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| allowClear | 支持清除 | boolean \| { clearIcon?: ReactNode } | true | 5.8.0: 支持对象形式 |
+| allowClear | 支持清除 | boolean \| { clearIcon?: ReactNode } | true |  |
 | autoClearSearchValue | 是否在选中项后清空搜索框，只在 `multiple` 为 `true` 时有效 | boolean | true | 5.9.0 |
 | autoFocus | 自动获取焦点 | boolean | false |  |
 | bordered | 是否有边框 | boolean | true |  |
@@ -65,29 +60,29 @@ demo:
 | expandIcon | 自定义次级菜单展开图标 | ReactNode | - | 4.4.0 |
 | expandTrigger | 次级菜单的展开方式，可选 'click' 和 'hover' | string | `click` |  |
 | fieldNames | 自定义 options 中 label value children 的字段 | object | { label: `label`, value: `value`, children: `children` } |  |
-| getPopupContainer | 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codepen.io/afc163/pen/zEjNOy?editors=0010) | function(triggerNode) | () => document.body |  |
+| getPopupContainer | 菜单渲染父节点。 | function(triggerNode) | () => document.body |  |
 | loadData | 用于动态加载选项，无法与 `showSearch` 一起使用 | (selectedOptions) => void | - |  |
-| maxTagCount | 最多显示多少个 tag，响应式模式会对性能产生损耗 | number \| `responsive` | - | 4.17.0 |
-| maxTagPlaceholder | 隐藏 tag 时显示的内容 | ReactNode \| function(omittedValues) | - | 4.17.0 |
-| maxTagTextLength | 最大显示的 tag 文本长度 | number | - | 4.17.0 |
+| maxTagCount | 最多显示多少个 tag，响应式模式会对性能产生损耗 | number \| `responsive` | - |  |
+| maxTagPlaceholder | 隐藏 tag 时显示的内容 | ReactNode \| function(omittedValues) | - |  |
+| maxTagTextLength | 最大显示的 tag 文本长度 | number | - |  |
 | notFoundContent | 当下拉列表为空时显示的内容 | string | `Not Found` |  |
-| open | 控制浮层显隐 | boolean | - | 4.17.0 |
+| open | 控制浮层显隐 | boolean | - |  |
 | options | 可选项数据源 | [Option](#option)\[] | - |  |
 | placeholder | 输入框占位文本 | string | `请选择` |  |
-| placement | 浮层预设位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | `bottomLeft` | 4.17.0 |
+| placement | 浮层预设位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | `bottomLeft` |  |
 | showSearch | 在选择框中显示搜索框 | boolean \| [Object](#showsearch) | false |  |
 | size | 输入框大小 | `large` \| `middle` \| `small` | - |  |
-| status | 设置校验状态 | 'error' \| 'warning' | - | 4.19.0 |
+| status | 设置校验状态 | 'error' \| 'warning' | - |  |
 | style | 自定义样式 | CSSProperties | - |  |
 | suffixIcon | 自定义的选择框后缀图标 | ReactNode | - |  |
 | value | 指定选中项 | string\[] \| number\[] | - |  |
 | onChange | 选择完成后的回调 | (value, selectedOptions) => void | - |  |
-| onDropdownVisibleChange | 显示/隐藏浮层的回调 | (value) => void | - | 4.17.0 |
-| multiple | 支持多选节点 | boolean | - | 4.17.0 |
-| showCheckedStrategy | 定义选中项回填的方式。`Cascader.SHOW_CHILD`: 只显示选中的子节点。`Cascader.SHOW_PARENT`: 只显示父节点（当父节点下所有子节点都选中时）。 | `Cascader.SHOW_PARENT` \| `Cascader.SHOW_CHILD` | `Cascader.SHOW_PARENT` | 4.20.0 |
+| onDropdownVisibleChange | 显示/隐藏浮层的回调 | (value) => void | - |  |
+| multiple | 支持多选节点 | boolean | - |  |
+| showCheckedStrategy | 定义选中项回填的方式。`Cascader.SHOW_CHILD`: 只显示选中的子节点。`Cascader.SHOW_PARENT`: 只显示父节点（当父节点下所有子节点都选中时）。 | `Cascader.SHOW_PARENT` \| `Cascader.SHOW_CHILD` | `Cascader.SHOW_PARENT` |  |
 | removeIcon | 自定义的多选框清除图标 | ReactNode | - |  |
-| searchValue | 设置搜索的值，需要与 `showSearch` 配合使用 | string | - | 4.17.0 |
-| onSearch | 监听搜索，返回输入的值 | (search: string) => void | - | 4.17.0 |
+| searchValue | 设置搜索的值，需要与 `showSearch` 配合使用 | string | - |  |
+| onSearch | 监听搜索，返回输入的值 | (search: string) => void | - |  |
 | dropdownMenuColumnStyle | 下拉菜单列的样式 | CSSProperties | - |  |
 
 ### showSearch
@@ -98,7 +93,7 @@ demo:
 | --- | --- | --- | --- | --- |
 | filter | 接收 `inputValue` `path` 两个参数，当 `path` 符合筛选条件时，应返回 true，反之则返回 false | function(inputValue, path): boolean | - |  |
 | limit | 搜索结果展示数量 | number \| false | 50 |  |
-| matchInputWidth | 搜索结果列表是否与输入框同宽（[效果](https://github.com/ant-design/ant-design/issues/25779)） | boolean | true |  |
+| matchInputWidth | 搜索结果列表是否与输入框同宽 | boolean | true |  |
 | render | 用于渲染 filter 后的选项 | function(inputValue, path): ReactNode | - |  |
 | sort | 用于排序 filter 后的选项 | function(a, b, inputValue) | - |  |
 

@@ -3,8 +3,6 @@ category: Components
 group: 数据展示
 title: Card
 subtitle: 卡片
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*VXtCTp93KPAAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*a-8zR6rrupgAAAAAAAAAAAAADrJ8AQ/original
 ---
 
 通用卡片容器。
@@ -30,8 +28,6 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*a-8zR6rrupgAAA
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
 ```jsx
 <Card title="卡片标题">卡片内容</Card>
 ```
@@ -53,7 +49,7 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*a-8zR6rrupgAAA
 | size | card 的尺寸 | `default` \| `small` | `default` |  |
 | tabBarExtraContent | tab bar 上额外的元素 | ReactNode | - |  |
 | tabList | 页签标题列表 | [TabItemType](/components/tabs#tabitemtype)[] | - |  |
-| tabProps | [Tabs](/components/tabs-cn#tabs) | - | - |  |
+| tabProps | [Tabs](/components/tabs#tabs) | - | - |  |
 | title | 卡片标题 | ReactNode | - |  |
 | type | 卡片类型，可设置为 `inner` 或 不设置 | string | - |  |
 | onTabChange | 页签切换的回调 | (key) => void | - |  |

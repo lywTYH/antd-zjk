@@ -3,8 +3,6 @@ category: Components
 subtitle: 多选框
 group: 数据录入
 title: Checkbox
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*DzgiRbW3khIAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*G3MjTYXL6AIAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
@@ -29,8 +27,6 @@ demo:
 <code src="./demo/debug-disable-popover.tsx" debug>禁用下的 Tooltip</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 #### Checkbox
 
@@ -76,15 +72,3 @@ interface Option {
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Checkbox"></ComponentTokenTable>
-
-## FAQ
-
-### 为什么在 Form.Item 下不能绑定数据？
-
-Form.Item 默认绑定值属性到 `value` 上，而 Checkbox 的值属性为 `checked`。你可以通过 `valuePropName` 来修改绑定的值属性。
-
-```tsx | pure
-<Form.Item name="fieldA" valuePropName="checked">
-  <Checkbox />
-</Form.Item>
-```

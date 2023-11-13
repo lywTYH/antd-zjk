@@ -3,8 +3,6 @@ category: Components
 subtitle: 标签
 group: 数据展示
 title: Tag
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*_SBsSrKLg00AAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*JPNAQYrVkYkAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
@@ -34,8 +32,6 @@ demo:
 <code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 ### Tag
 

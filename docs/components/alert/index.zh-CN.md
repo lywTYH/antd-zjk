@@ -2,8 +2,6 @@
 category: Components
 subtitle: 警告提示
 title: Alert
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*Ct7bT7rrTTAAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*-U3XQqYN7VsAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 group:
@@ -36,11 +34,9 @@ group:
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| action | 自定义操作项 | ReactNode | - | 4.9.0 |
+| action | 自定义操作项 | ReactNode | - |  |
 | afterClose | 关闭动画结束后触发的回调函数 | () => void | - |  |
 | banner | 是否用作顶部公告 | boolean | false |  |
 | closeIcon | 自定义关闭 Icon，>=5.7.0: 设置为 `null` 或 `false` 时隐藏关闭按钮 | boolean \| ReactNode | `<CloseOutlined />` |  |

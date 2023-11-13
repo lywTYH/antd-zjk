@@ -3,8 +3,6 @@ category: Components
 subtitle: 提及
 group: 数据录入
 title: Mentions
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*e4bXT7Uhi9YAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*pxR2S53P_xoAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
@@ -15,21 +13,10 @@ demo:
 
 用于在输入中提及某人或某事，常用于发布、聊天或评论功能。
 
-### 5.1.0 用法升级
-
-<Alert message="在 5.1.0 版本后，我们提供了 &lt;Mentions options={[...]} /&gt; 的简写方式，有更好的性能和更方便的数据组织方式，开发者不再需要自行拼接 JSX。同时我们废弃了原先的写法，你还是可以在 5.x 继续使用，但会在控制台看到警告，并会在 6.0 后移除。"></Alert>
-
 ```jsx
-// >=5.1.0 可用，推荐的写法 ✅
+// 推荐的写法 ✅
 const options = [{ value: 'sample', label: 'sample' }];
 return <Mentions options={options} />;
-
-// <5.1.0 可用，>=5.1.0 时不推荐 🙅🏻‍♀️
-return (
-  <Mentions onChange={onChange}>
-    <Mentions.Option value="sample">Sample</Mentions.Option>
-  </Mentions>
-);
 ```
 
 ## 代码演示
@@ -43,12 +30,11 @@ return (
 <code src="./demo/placement.tsx">向上展开</code>
 <code src="./demo/autoSize.tsx">自动大小</code>
 <code src="./demo/status.tsx">自定义状态</code>
-<code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>
-<code src="./demo/component-token.tsx" debug>组件 Token</code>
+
+<!-- <code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code> -->
+<!-- <code src="./demo/component-token.tsx" debug>组件 Token</code> -->
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 ### Mentions
 
@@ -63,7 +49,7 @@ return (
 | placement | 弹出层展示位置 | `top` \| `bottom` | `bottom` |  |
 | prefix | 设置触发关键字 | string \| string\[] | `@` |  |
 | split | 设置选中项前后分隔符 | string | ` ` |  |
-| status | 设置校验状态 | 'error' \| 'warning' | - | 4.19.0 |
+| status | 设置校验状态 | 'error' \| 'warning' | - |  |
 | validateSearch | 自定义触发验证逻辑 | (text: string, props: MentionsProps) => void | - |  |
 | value | 设置值 | string | - |  |
 | onBlur | 失去焦点时触发 | () => void | - |  |
@@ -72,7 +58,7 @@ return (
 | onResize | resize 回调 | function({ width, height }) | - |  |
 | onSearch | 搜索时触发 | (text: string, prefix: string) => void | - |  |
 | onSelect | 选择选项时触发 | (option: OptionProps, prefix: string) => void | - |  |
-| options | 选项配置 | [Options](#option) | [] | 5.1.0 |
+| options | 选项配置 | [Options](#option) | [] |  |
 
 ### Mentions 方法
 

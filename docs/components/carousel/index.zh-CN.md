@@ -3,8 +3,6 @@ category: Components
 group: 数据展示
 title: Carousel
 subtitle: 走马灯
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*bPMSSqbaTMkAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*a-58QpYnqOsAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
@@ -27,8 +25,6 @@ demo:
 <code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -54,9 +50,3 @@ demo:
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Carousel"></ComponentTokenTable>
-
-## FAQ
-
-### 如何自定义箭头？
-
-可参考 [#12479](https://github.com/ant-design/ant-design/issues/12479)。

@@ -3,8 +3,6 @@ category: Components
 subtitle: 面包屑
 group: 导航
 title: Breadcrumb
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*I5a2Tpqs3y0AAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*Tr90QKrE_LcAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
@@ -18,18 +16,9 @@ demo:
 - 当需要向上导航的功能时。
 
 ```jsx
-// >=5.3.0 可用，推荐的写法 ✅
+// 推荐的写法 ✅
 return <Breadcrumb items={[{ title: 'sample' }]} />;
-
-// <5.3.0 可用，>=5.3.0 时不推荐 🙅🏻‍♀️
-return (
-  <Breadcrumb>
-    <Breadcrumb.Item>sample</Breadcrumb.Item>
-  </Breadcrumb>
-);
-
 // 或
-
 return <Breadcrumb routes={[{ breadcrumbName: 'sample' }]} />;
 ```
 
@@ -45,8 +34,6 @@ return <Breadcrumb routes={[{ breadcrumbName: 'sample' }]} />;
 <code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 ### Breadcrumb
 

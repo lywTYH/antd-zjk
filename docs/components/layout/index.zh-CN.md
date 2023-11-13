@@ -3,8 +3,6 @@ category: Components
 subtitle: 布局
 group: 布局
 title: Layout
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*4i58ToAcxaYAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*HdS6Q5vUCDcAAAAAAAAAAAAADrJ8AQ/original
 ---
 
 协助进行页面级整体布局。
@@ -55,8 +53,6 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*HdS6Q5vUCDcAAA
 - `Content`：内容部分，自带默认样式，其下可嵌套任何元素，只能放在 `Layout` 中。
 - `Footer`：底部布局，自带默认样式，其下可嵌套任何元素，只能放在 `Layout` 中。
 
-> 注意：采用 flex 布局实现，请注意[浏览器兼容性](http://caniuse.com/#search=flex)问题。
-
 ## 代码演示
 
 <!-- prettier-ignore -->
@@ -87,8 +83,6 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*HdS6Q5vUCDcAAA
 ```
 
 ### Layout
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 布局容器。
 

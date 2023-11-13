@@ -3,12 +3,7 @@ category: Components
 subtitle: 弹性布局
 group: 布局
 title: Flex
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*SMzgSJZE_AwAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*8yArQ43EGccAAAAAAAAAAAAADrJ8AQ/original
-tag: New
 ---
-
-弹性布局。自 `5.10.0` 版本开始提供该组件。
 
 ## 何时使用
 
@@ -31,10 +26,6 @@ tag: New
 <code src="./demo/debug.tsx" debug>调试专用</code>
 
 ## API
-
-> 自 `antd@5.10.0` 版本开始提供该组件。Flex 组件默认行为在水平模式下，为向上对齐，在垂直模式下，为拉伸对齐，你可以通过属性进行调整。
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |

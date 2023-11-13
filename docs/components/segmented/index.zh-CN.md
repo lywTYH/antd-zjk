@@ -3,13 +3,9 @@ category: Components
 subtitle: 分段控制器
 group: 数据展示
 title: Segmented
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*papwTpNscPIAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*tz7qSaWpi1kAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
-
-分段控制器。自 `antd@4.20.0` 版本开始提供该组件。
 
 ## 何时使用
 
@@ -34,9 +30,7 @@ demo:
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
-> 自 `antd@4.20.0` 版本开始提供该组件。
+> 自 `antd@   ` 版本开始提供该组件。
 
 ### Segmented
 

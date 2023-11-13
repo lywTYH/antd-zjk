@@ -27,21 +27,6 @@ const App: React.FC = () => (
       (<Text code>Sketch</Text> and <Text code>Axure</Text>), to help people create their product
       prototypes beautifully and efficiently.
     </Paragraph>
-
-    <Paragraph>
-      <ul>
-        <li>
-          <a href="/docs/spec/proximity">Principles</a>
-        </li>
-        <li>
-          <a href="/docs/pattern/navigation">Patterns</a>
-        </li>
-        <li>
-          <a href="/docs/resource/download">Resource Download</a>
-        </li>
-      </ul>
-    </Paragraph>
-
     <Title id="intro">介绍</Title>
     <Paragraph>
       蚂蚁的企业级产品是一个庞大且复杂的体系。这类产品不仅量级巨大且功能复杂，而且变动和并发频繁，常常需要设计与开发能够快速的做出响应。同时这类产品中有存在很多类似的页面以及组件，可以通过抽象得到一些稳定且高复用性的内容。
@@ -56,20 +41,6 @@ const App: React.FC = () => (
     <Paragraph>
       我们提供完善的设计原则、最佳实践和设计资源文件（<Text code>Sketch</Text> 和
       <Text code>Axure</Text>），来帮助业务快速设计出高质量的产品原型。
-    </Paragraph>
-
-    <Paragraph>
-      <ul>
-        <li>
-          <a href="/docs/spec/proximity">设计原则</a>
-        </li>
-        <li>
-          <a href="/docs/pattern/navigation">设计模式</a>
-        </li>
-        <li>
-          <a href="/docs/resource/download">设计资源</a>
-        </li>
-      </ul>
     </Paragraph>
 
     <Paragraph>

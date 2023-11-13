@@ -17,7 +17,6 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 
 - 卡片式的页签，提供可关闭的样式，常用于容器顶部。
 - 既可用于容器顶部，也可用于容器内部，是最通用的 Tabs。
-- [Radio.Button](/components/radio-cn/#components-radio-demo-radiobutton) 可作为更次级的页签来使用。
 
 ## 代码演示
 
@@ -42,8 +41,6 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 <code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 ### Tabs
 
@@ -71,8 +68,6 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 | onEdit | 新增和删除页签的回调，在 `type="editable-card"` 时有效 | (action === 'add' ? event : targetKey, action): void | - |  |
 | onTabClick | tab 被点击的回调 | function(key: string, event: MouseEvent) | - |  |
 | onTabScroll | tab 滚动时触发 | function({ direction: `left` \| `right` \| `top` \| `bottom` }) | - | 4.3.0 |
-
-> 更多属性查看 [rc-tabs tabs](https://github.com/react-component/tabs#tabs)
 
 ### TabItemType
 

@@ -3,8 +3,6 @@ category: Components
 subtitle: 气泡卡片
 group: 数据展示
 title: Popover
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*XhL3QpRw92kAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*RMP_TrdZ3nsAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
@@ -32,8 +30,6 @@ demo:
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
 | 参数    | 说明     | 类型                         | 默认值 | 版本 |
 | ------- | -------- | ---------------------------- | ------ | ---- |
 | content | 卡片内容 | ReactNode \| () => ReactNode | -      |      |
@@ -48,7 +44,3 @@ demo:
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Popover"></ComponentTokenTable>
-
-## FAQ
-
-请参考 [Tooltip FAQ](/components/tooltip#faq)。

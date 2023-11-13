@@ -3,8 +3,6 @@ category: Components
 subtitle: 骨架屏
 group: 反馈
 title: Skeleton
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*uae3QbkNCm8AAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*VcjGQLSrYdcAAAAAAAAAAAAADrJ8AQ/original
 ---
 
 在需要等待加载内容的位置提供一个占位图形组合。
@@ -25,11 +23,10 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*VcjGQLSrYdcAAA
 <code src="./demo/element.tsx">按钮/头像/输入框/图像/自定义节点</code>
 <code src="./demo/children.tsx">包含子组件</code>
 <code src="./demo/list.tsx">列表</code>
-<code src="./demo/componentToken.tsx" debug>自定义组件 Token</code>
+
+<!-- <code src="./demo/componentToken.tsx" debug>自定义组件 Token</code> -->
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 ### Skeleton
 

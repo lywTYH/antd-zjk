@@ -3,8 +3,6 @@ category: Components
 subtitle: 分页
 group: 导航
 title: Pagination
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*8y_iTJGY_aUAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*WM86SrBC8TsAAAAAAAAAAAAADrJ8AQ/original
 ---
 
 采用分页的形式分隔长列表，每次只加载一个页面。
@@ -31,8 +29,6 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*WM86SrBC8TsAAA
 <code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 ```jsx
 <Pagination onChange={onChange} total={50} />

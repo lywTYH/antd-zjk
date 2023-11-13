@@ -2,16 +2,11 @@
 category: Components
 subtitle: 颜色选择器
 title: ColorPicker
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*PpY4RYNM8UcAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*EHL-QYJofZsAAAAAAAAAAAAADrJ8AQ/original
-tag: New
 demo:
   cols: 2
 group:
   title: 数据录入
 ---
-
-提供颜色选取的组件，自 `5.5.0` 版本开始提供该组件。
 
 ## 何时使用
 
@@ -37,10 +32,6 @@ group:
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
-> 自 `antd@5.5.0` 版本开始提供该组件。
-
 <!-- prettier-ignore -->
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | :-- | :-- | :-- | :-- | :-- |
@@ -50,7 +41,7 @@ group:
 | defaultValue | 颜色默认的值 | string \| `Color` | - | |
 | defaultFormat | 颜色格式默认的值 | `rgb` \| `hex` \| `hsb` | - | 5.9.0 |
 | disabled | 禁用颜色选择器 | boolean | - | |
-| disabledAlpha | 禁用透明度 | boolean | - | 5.8.0 |
+| disabledAlpha | 禁用透明度 | boolean | - |   |
 | destroyTooltipOnHide | 关闭后是否销毁弹窗 | `boolean` | false | 5.7.0 |
 | format | 颜色格式 | `rgb` \| `hex` \| `hsb` | `hex` | |
 | open | 是否显示弹出窗口 | boolean | - | |
@@ -78,9 +69,3 @@ group:
 | toHsbString | 转换成 `hsb` 格式颜色字符串，返回格式如：`hsb(215, 91%, 100%)` | `() => string` | - |
 | toRgb | 转换成 `rgb` 对象  | `() => ({ r: number, g: number, b: number, a number })` | - |
 | toRgbString | 转换成 `rgb` 格式颜色字符串，返回格式如：`rgb(22, 119, 255)` | `() => string` | - |
-
-## FAQ
-
-### 关于颜色赋值的问题
-
-颜色选择器的值同时支持字符串色值和选择器生成的 `Color` 对象，但由于不同格式的颜色字符串互相转换会有精度误差问题，所以受控场景推荐使用选择器生成的 `Color` 对象来进行赋值操作，这样可以避免精度问题，保证取值是精准的，选择器也可以按照预期工作。

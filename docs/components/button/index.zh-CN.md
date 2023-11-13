@@ -2,8 +2,6 @@
 category: Components
 title: Button
 subtitle: 按钮
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*BrFMQ5s7AAQAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*Lp1kTYmSsgoAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 group:
@@ -32,8 +30,6 @@ group:
 - 禁用：行动点不可用的时候，一般需要文案解释。
 - 加载中：用于异步操作等待反馈的时候，也可以避免多次提交。
 
-[完整设计指南](https://ant.design/docs/spec/buttons-cn)
-
 ## 代码演示
 
 <!-- prettier-ignore -->
@@ -53,8 +49,6 @@ group:
 <code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 通过设置 Button 的属性来产生不同的按钮样式，推荐顺序为：`type` -> `shape` -> `size` -> `loading` -> `disabled`。
 
@@ -89,22 +83,3 @@ group:
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Button"></ComponentTokenTable>
-
-## FAQ
-
-### 如何移除两个汉字之间的空格？
-
-根据 Ant Design 设计规范要求，我们会在按钮内(文本按钮和链接按钮除外)只有两个汉字时自动添加空格，如果你不需要这个特性，可以设置 [ConfigProvider](/components/config-provider-cn#api) 的 `autoInsertSpaceInButton` 为 `false`。
-
-<img src="https://gw.alipayobjects.com/zos/antfincdn/MY%26THAPZrW/38f06cb9-293a-4b42-b183-9f443e79ffea.png" style="box-shadow: none; margin: 0" width="100px" height="64px" alt="移除两个汉字之间的空格"  />
-
-<style>
-.site-button-ghost-wrapper {
-  padding: 16px;
-  background: rgb(190, 200, 200);
-}
-</style>
-
-## 设计指引
-
-- [我的按钮究竟该放哪儿！？| Ant Design 4.0 系列分享](https://zhuanlan.zhihu.com/p/109644406)

@@ -3,11 +3,8 @@ category: Components
 subtitle: 漫游式引导
 group: 数据展示
 title: Tour
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*8CC_Tbe3_e4AAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*nF6hQpM0XtEAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
-tag: New
 ---
 
 用于分步引导用户了解产品功能的气泡组件。自 `5.0.0` 版本开始提供该组件。
@@ -27,8 +24,6 @@ tag: New
 <code src="./demo/render-panel.tsx" debug>\_InternalPanelDoNotUseOrYouWillBeFired</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 ### Tour
 

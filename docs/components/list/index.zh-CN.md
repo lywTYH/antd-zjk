@@ -3,8 +3,6 @@ category: Components
 group: 数据展示
 title: List
 subtitle: 列表
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*EYuhSpw1iSwAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*tBzwQ7raKX8AAAAAAAAAAAAADrJ8AQ/original
 ---
 
 通用列表。
@@ -29,10 +27,6 @@ coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*tBzwQ7raKX8AAA
 <code src="./demo/component-token.tsx" debug>自定义组件 token</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
-
-另外我们封装了 [ProList](https://procomponents.ant.design/components/list)，在 `antd` List 之上扩展了更多便捷易用的功能，比如多选，展开等功能，使用体验贴近 Table，欢迎尝试使用。
 
 ### List
 

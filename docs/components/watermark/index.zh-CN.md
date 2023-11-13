@@ -3,11 +3,8 @@ category: Components
 subtitle: 水印
 group: 反馈
 title: Watermark
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*wr1ISY50SyYAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*duAQQbjHlHQAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 1
-tag: New
 ---
 
 给页面的某个区域加上水印。
@@ -27,8 +24,6 @@ tag: New
 <code src="./demo/portal.tsx">Modal 与 Drawer</code>
 
 ## API
-
-通用属性参考：[通用属性](/docs/react/common-props)
 
 ### Watermark
 
@@ -54,7 +49,7 @@ tag: New
 | fontWeight | 字体粗细 | `normal` \| `light` \| `weight` \| number | normal |  |
 | fontFamily | 字体类型 | string | sans-serif |  |
 | fontStyle | 字体样式 | `none` \| `normal` \| `italic` \| `oblique` | normal |  |
-| textAlign | 指定文本对齐方向  | [CanvasTextAlign](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textAlign) | 5.10.0 |
+| textAlign | 指定文本对齐方向  | [CanvasTextAlign](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textAlign) |   |
 
 ## 主题变量（Design Token）
 
@@ -64,7 +59,7 @@ tag: New
 
 ### 处理异常图片水印
 
-当使用图片水印且图片加载异常时，可以同时添加 `content` 防止水印失效（自 5.2.3 开始支持）。
+当使用图片水印且图片加载异常时，可以同时添加 `content` 防止水印失效。
 
 ```typescript jsx
 <Watermark

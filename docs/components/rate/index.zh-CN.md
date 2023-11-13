@@ -3,8 +3,6 @@ category: Components
 subtitle: 评分
 group: 数据录入
 title: Rate
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*oyOcTrB12_YAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*M7_ER7GJr6wAAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 ---
@@ -30,14 +28,12 @@ demo:
 
 ## API
 
-通用属性参考：[通用属性](/docs/react/common-props)
-
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | allowClear | 是否允许再次点击后清除 | boolean | true |  |
 | allowHalf | 是否允许半选 | boolean | false |  |
 | autoFocus | 自动获取焦点 | boolean | false |  |
-| character | 自定义字符 | ReactNode \| (RateProps) => ReactNode | &lt;StarFilled /> | function(): 4.4.0 |
+| character | 自定义字符 | ReactNode \| (RateProps) => ReactNode | &lt;StarFilled /> |  |
 | className | 自定义样式类名 | string | - |  |
 | count | star 总数 | number | 5 |  |
 | defaultValue | 默认值 | number | 0 |  |
