@@ -28,10 +28,6 @@ demo:
 <code src="./demo/prefix.tsx">前缀</code>
 <code src="./demo/status.tsx">自定义状态</code>
 
-<!-- <code src="./demo/controls.tsx" debug>图标按钮</code> -->
-<!-- <code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>
-<code src="./demo/debug-token.tsx" debug>覆盖组件样式</code> -->
-
 ## API
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |

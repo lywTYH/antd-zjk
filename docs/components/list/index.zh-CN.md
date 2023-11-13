@@ -20,11 +20,9 @@ subtitle: 列表
 <code src="./demo/vertical.tsx">竖排列表样式</code>
 <code src="./demo/pagination.tsx">分页设置</code>
 <code src="./demo/grid.tsx">栅格列表</code>
-<code src="./demo/grid-test.tsx" debug>测试栅格列表</code>
 <code src="./demo/responsive.tsx">响应式的栅格列表</code>
 <code src="./demo/infinite-load.tsx">滚动加载</code>
 <code src="./demo/virtual-list.tsx">滚动加载无限长列表</code>
-<code src="./demo/component-token.tsx" debug>自定义组件 token</code>
 
 ## API
 

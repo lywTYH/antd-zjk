@@ -22,9 +22,6 @@ subtitle: 导航菜单
 <code src="./demo/theme.tsx">主题</code>
 <code src="./demo/submenu-theme.tsx">子菜单主题</code>
 <code src="./demo/switch-mode.tsx">切换菜单类型</code>
-<code src="./demo/horizontal-dark.tsx" debug>顶部导航（dark）</code>
-<code src="./demo/style-debug.tsx" debug>Style debug</code>
-<code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
 

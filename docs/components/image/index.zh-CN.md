@@ -25,9 +25,6 @@ cols: 2
 <code src="./demo/controlled-preview.tsx">受控的预览</code>
 <code src="./demo/toolbarRender.tsx">自定义工具栏</code>
 <code src="./demo/imageRender.tsx">自定义预览内容</code>
-<code src="./demo/preview-mask.tsx" debug>自定义预览文本</code>
-<code src="./demo/preview-group-top-progress.tsx" debug>多图预览时顶部进度自定义</code>
-<code src="./demo/component-token.tsx" debug>自定义组件 Token</code>
 
 ## API
 

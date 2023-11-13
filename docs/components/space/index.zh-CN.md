@@ -32,10 +32,6 @@ title: Space
 <code src="./demo/compact.tsx">紧凑布局组合</code>
 <code src="./demo/compact-buttons.tsx">Button 紧凑布局</code>
 <code src="./demo/compact-button-vertical.tsx">垂直方向紧凑布局</code>
-<code src="./demo/compact-debug.tsx" debug>调试 Input 前置/后置标签</code>
-<code src="./demo/compact-nested.tsx" debug>紧凑布局嵌套</code>
-<code src="./demo/debug.tsx" debug>多样的 Child</code>
-<code src="./demo/gap-in-line.tsx" debug>Flex gap 样式</code>
 
 ## API
 

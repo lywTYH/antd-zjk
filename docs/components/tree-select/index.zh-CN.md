@@ -24,9 +24,6 @@ demo:
 <code src="./demo/treeLine.tsx">线性样式</code>
 <code src="./demo/placement.tsx">弹出位置</code>
 <code src="./demo/status.tsx">自定义状态</code>
-<code src="./demo/suffix.tsx" debug>后缀图标</code>
-<code src="./demo/render-panel.tsx" debug>\_InternalPanelDoNotUseOrYouWillBeFired</code>
-<code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
 

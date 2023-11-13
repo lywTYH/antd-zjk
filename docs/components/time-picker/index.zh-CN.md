@@ -28,10 +28,6 @@ demo:
 <code src="./demo/bordered.tsx">无边框</code>
 <code src="./demo/status.tsx">自定义状态</code>
 
-<!-- <code src="./demo/colored-popup.tsx" debug>色付きポップアップ</code> -->
-<!-- <code src="./demo/suffix.tsx" debug>后缀图标</code>
-<code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code> -->
-
 ## API
 
 ```jsx

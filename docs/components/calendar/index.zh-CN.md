@@ -20,7 +20,6 @@ title: Calendar
 <code src="./demo/select.tsx" clientOnly>选择功能</code>
 <code src="./demo/lunar.tsx" clientOnly>农历日历</code>
 <code src="./demo/customize-header.tsx" clientOnly>自定义头部</code>
-<code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
 
@@ -58,7 +57,7 @@ title: Calendar
 | value | 展示日期 | [dayjs](https://day.js.org/) | - |  |
 | onChange | 日期变化回调 | function(date: Dayjs) | - |  |
 | onPanelChange | 日期面板变化回调 | function(date: Dayjs, mode: string) | - |  |
-| onSelect | 选择日期回调，包含来源信息 | function(date: Dayjs, info: { source: 'year' \| 'month' \| 'date' \| 'customize' }) | - | `info`: 5.6.0 |
+| onSelect | 选择日期回调，包含来源信息 | function(date: Dayjs, info: { source: 'year' \| 'month' \| 'date' \| 'customize' }) | - |  |
 
 ## 主题变量（Design Token）
 

@@ -23,16 +23,10 @@ title: Steps
 <code src="./demo/error.tsx">步骤运行错误</code>
 <code src="./demo/progress-dot.tsx">点状步骤条</code>
 <code src="./demo/customized-progress-dot.tsx">自定义点状步骤条</code>
-<code src="./demo/progress-dot-small.tsx" debug>迷你版点状步骤条</code>
 <code src="./demo/clickable.tsx">可点击</code>
 <code src="./demo/nav.tsx">导航步骤</code>
 <code src="./demo/progress.tsx">带有进度的步骤</code>
 <code src="./demo/label-placement.tsx">标签放置位置</code>
-<code src="./demo/progress-debug.tsx" debug>Progress Debug</code>
-<code src="./demo/steps-in-steps.tsx" debug>Steps 嵌套 Steps</code>
-<code src="./demo/inline.tsx">内联步骤</code>
-<code src="./demo/wireframe.tsx" debug>线框风格</code>
-<code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
 

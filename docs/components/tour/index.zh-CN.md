@@ -21,7 +21,6 @@ demo:
 <code src="./demo/placement.tsx">位置</code>
 <code src="./demo/mask.tsx">自定义遮罩样式</code>
 <code src="./demo/indicator.tsx">自定义指示器</code>
-<code src="./demo/render-panel.tsx" debug>\_InternalPanelDoNotUseOrYouWillBeFired</code>
 
 ## API
 

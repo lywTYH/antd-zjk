@@ -21,7 +21,6 @@ demo:
 <code src="./demo/size.tsx">三种大小</code>
 <code src="./demo/addon.tsx">前置/后置标签</code>
 <code src="./demo/compact-style.tsx">紧凑模式</code>
-<code src="./demo/group.tsx" debug>输入框组合</code>
 <code src="./demo/search-input.tsx">搜索框</code>
 <code src="./demo/search-input-loading.tsx">搜索框 loading</code>
 <code src="./demo/textarea.tsx">文本域</code>
@@ -35,11 +34,6 @@ demo:
 <code src="./demo/status.tsx">自定义状态</code>
 <code src="./demo/borderless.tsx">无边框</code>
 <code src="./demo/focus.tsx">聚焦</code>
-<code src="./demo/borderless-debug.tsx" debug>Style Debug</code>
-<code src="./demo/align.tsx" debug>文本对齐</code>
-<code src="./demo/textarea-resize.tsx" debug>文本域</code>
-<code src="./demo/debug-addon.tsx" debug>debug 前置/后置标签</code>
-<code src="./demo/component-token.tsx" debug>debug token</code>
 
 ## API
 

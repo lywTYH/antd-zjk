@@ -39,20 +39,6 @@ const items: CollapseProps['items'] = [
 ];
 
 <Collapse items={items} defaultActiveKey={['1']} />;
-
-// 不推荐 🙅🏻‍♀️
-
-<Collapse defaultActiveKey={['1']} onChange={onChange}>
-  <Panel header="This is panel header 1" key="1">
-    <p>{text}</p>
-  </Panel>
-  <Panel header="This is panel header 2" key="2">
-    <p>{text}</p>
-  </Panel>
-  <Panel header="This is panel header 3" key="3">
-    <p>{text}</p>
-  </Panel>
-</Collapse>;
 ```
 
 ## 代码演示
@@ -68,7 +54,6 @@ const items: CollapseProps['items'] = [
 <code src="./demo/extra.tsx">额外节点</code>
 <code src="./demo/ghost.tsx">幽灵折叠面板</code>
 <code src="./demo/collapsible.tsx">可折叠触发区域</code>
-<code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
 
@@ -83,11 +68,11 @@ const items: CollapseProps['items'] = [
 | defaultActiveKey | 初始化选中面板的 key | string\[] \| string<br/> number\[] \| number | - |  |
 | destroyInactivePanel | 销毁折叠隐藏的面板 | boolean | false |  |
 | expandIcon | 自定义切换图标 | (panelProps) => ReactNode | - |  |
-| expandIconPosition | 设置图标位置 | `start` \| `end` | - | 4.21.0 |
-| ghost | 使折叠面板透明且无边框 | boolean | false | 4.4.0 |
-| size | 设置折叠面板大小 | `large` \| `middle` \| `small` | `middle` | 5.2.0 |
+| expandIconPosition | 设置图标位置 | `start` \| `end` | - |  |
+| ghost | 使折叠面板透明且无边框 | boolean | false |  |
+| size | 设置折叠面板大小 | `large` \| `middle` \| `small` | `middle` |  |
 | onChange | 切换面板的回调 | function | - |  |
-| items | 折叠项目内容 | [ItemType] | - | 5.6.0 |
+| items | 折叠项目内容 | [ItemType] | - |  |
 
 ### Collapse.Panel
 
@@ -95,7 +80,7 @@ const items: CollapseProps['items'] = [
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| collapsible | 是否可折叠或指定可折叠触发区域 | `header` \| `icon` \| `disabled` | - | (icon: 4.24.0) |
+| collapsible | 是否可折叠或指定可折叠触发区域 | `header` \| `icon` \| `disabled` | - |  |
 | extra | 自定义渲染每个面板右上角的内容 | ReactNode | - |  |
 | forceRender | 被隐藏时是否渲染 DOM 结构 | boolean | false |  |
 | header | 面板头内容 | ReactNode | - |  |

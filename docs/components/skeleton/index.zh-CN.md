@@ -24,8 +24,6 @@ title: Skeleton
 <code src="./demo/children.tsx">包含子组件</code>
 <code src="./demo/list.tsx">列表</code>
 
-<!-- <code src="./demo/componentToken.tsx" debug>自定义组件 Token</code> -->
-
 ## API
 
 ### Skeleton

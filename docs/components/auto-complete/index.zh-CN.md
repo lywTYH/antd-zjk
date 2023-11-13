@@ -33,8 +33,6 @@ demo:
 <code src="./demo/status.tsx">自定义状态</code>
 <code src="./demo/borderless.tsx">无边框</code>
 <code src="./demo/allowClear.tsx">自定义清除按钮</code>
-<code src="./demo/form-debug.tsx" debug>在 Form 中 Debug</code>
-<code src="./demo/render-panel.tsx" debug>\_InternalPanelDoNotUseOrYouWillBeFired</code>
 
 ## API
 

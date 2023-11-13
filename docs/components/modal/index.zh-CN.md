@@ -32,10 +32,6 @@ demo:
 <code src="./demo/confirm.tsx">静态确认对话框</code>
 <code src="./demo/classNames.tsx">自定义内部模块 className</code>
 <code src="./demo/confirm-router.tsx">销毁确认对话框</code>
-<code src="./demo/render-panel.tsx" debug>\_InternalPanelDoNotUseOrYouWillBeFired</code>
-<code src="./demo/custom-mouse-position.tsx" debug>控制弹框动画原点</code>
-<code src="./demo/wireframe.tsx" debug>线框风格</code>
-<code src="./demo/component-token.tsx" debug>组件 Token</code>
 
 ## API
 

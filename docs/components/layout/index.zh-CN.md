@@ -65,8 +65,6 @@ title: Layout
 <code src="./demo/responsive.tsx" compact background="grey">响应式布局</code>
 <code src="./demo/fixed.tsx" iframe="360">固定头部</code>
 <code src="./demo/fixed-sider.tsx" iframe="360">固定侧边栏</code>
-<code src="./demo/custom-trigger-debug.tsx" compact background="grey" debug>自定义触发器 Debug</code>
-<code src="./demo/component-token.tsx" compact background="grey" debug>组件 Token</code>
 
 ## API
 
