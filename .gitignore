@@ -25,4 +25,4 @@ dist
 .dumi/tmp-production/
 dist-docs
 .vscode
-_docs
+_docs/
