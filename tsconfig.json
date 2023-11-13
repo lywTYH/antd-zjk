@@ -21,6 +21,6 @@
     "strict": true,
     "resolveJsonModule": true
   },
-  "include": ["src"],
+  "include": ["src", ".dumirc.ts"],
   "exclude": ["node_modules", "dist"]
 }
