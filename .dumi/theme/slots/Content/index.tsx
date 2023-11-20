@@ -180,7 +180,6 @@ const Content: React.FC<{ children: ReactNode }> = ({ children }) => {
               </Space>
             </Typography.Title>
           ) : null}
-          {meta.frontmatter.description}
           <div style={{ minHeight: 'calc(100vh - 64px)' }}>{children}</div>
         </article>
         <PrevAndNext />
