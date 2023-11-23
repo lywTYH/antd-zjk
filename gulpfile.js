@@ -1,9 +1,12 @@
+import autoprefixer from 'autoprefixer';
 import { deleteAsync } from 'del';
 import fs from 'fs-extra';
 import gulp from 'gulp';
 import gulpBabel from 'gulp-babel';
+import postcss from 'gulp-postcss';
 import gulpTS from 'gulp-typescript';
 import merge2 from 'merge2';
+import postcssNesting from 'postcss-nesting';
 
 import gulpDTSModule from './scripts/gulp-dts-module.js';
 import gulpTransform from './scripts/gulp-transform.js';
@@ -17,9 +20,6 @@ const babelConfig = {
       '@babel/preset-env',
       {
         modules: false,
-        targets: {
-          browsers: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'not dead', 'not IE 11'],
-        },
       },
     ],
   ],
@@ -85,7 +85,6 @@ gulp.task('copyAntdWithTransform', () => {
     }
     return content;
   };
-
   return gulp
     .src(['./node_modules/antd/es/**/**'])
     .pipe(gulpTransform(antdTokenMatches, antdTokenTransform))
@@ -114,6 +113,11 @@ gulp.task('generatePackageJson', () => {
     .pipe(gulp.dest(buildPath));
 });
 
+gulp.task('css', () => {
+  const plugins = [postcssNesting(), autoprefixer()];
+  return gulp.src(['./src/**/*.css']).pipe(postcss(plugins)).pipe(gulp.dest(buildPath));
+});
+
 gulp.task('clean', () => deleteAsync([buildPath]));
 
 gulp.task(
@@ -121,10 +125,6 @@ gulp.task(
   gulp.series([
     'clean',
     gulp.parallel(['copyAntdWithTransform', 'generatePackageJson']),
-    'compileTSXForESM',
+    gulp.parallel(['compileTSXForESM', 'css']),
   ]),
 );
-
-gulp.task('build:docs', () => {
-  console.log('build:docs');
-});

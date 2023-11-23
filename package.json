@@ -23,6 +23,12 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ],
   "dependencies": {
     "antd": "^5.10.2"
   },
@@ -42,6 +48,7 @@
     "antd-img-crop": "^4.14.0",
     "antd-style": "^3.5.1",
     "antd-token-previewer": "^2.0.5",
+    "autoprefixer": "^10.4.16",
     "babel-plugin-module-resolver": "^5.0.0",
     "chalk": "^5.3.0",
     "del": "^7.1.0",
@@ -50,6 +57,7 @@
     "fs-extra": "^11.1.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-typescript": "^6.0.0-alpha.1",
     "husky": "^8.0.3",
     "jsonml-to-react-element": "^1.1.11",
@@ -57,6 +65,8 @@
     "lint-staged": "^15.0.2",
     "lunar-typescript": "^1.6.11",
     "merge2": "^1.4.1",
+    "postcss": "^8.4.31",
+    "postcss-nesting": "^12.0.1",
     "prettier": "^3.0.3",
     "prettier-plugin-organize-imports": "^3.2.3",
     "prettier-plugin-packagejson": "^2.4.6",
