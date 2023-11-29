@@ -39,3 +39,9 @@ title: Flex
 ## Design Token
 
 <ComponentTokenTable component="Flex"></ComponentTokenTable>
+
+<style>
+.site-form-item-icon {
+  color: rgba(0, 0, 0, 0.25);
+}
+</style>

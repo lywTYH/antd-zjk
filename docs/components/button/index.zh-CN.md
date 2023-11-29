@@ -78,3 +78,10 @@ group:
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Button"></ComponentTokenTable>
+
+<style>
+.site-button-ghost-wrapper {
+  padding: 16px;
+  background: rgb(190, 200, 200);
+}
+</style>
