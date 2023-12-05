@@ -36,7 +36,7 @@ const App: React.FC = () => {
         components: {
           Layout: {
             bodyBg: '#fff',
-            headerBg: '#1677ff',
+            headerBg: '#008EE0',
             headerHeight: 64,
             headerPadding: `0 24px`,
             headerColor: '#fff',

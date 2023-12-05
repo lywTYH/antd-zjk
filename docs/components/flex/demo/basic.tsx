@@ -17,7 +17,7 @@ const App: React.FC = () => {
       </Radio.Group>
       <Flex vertical={value === 'vertical'}>
         {Array.from({ length: 4 }).map((_, i) => (
-          <div key={i} style={{ ...baseStyle, backgroundColor: i % 2 ? '#1677ff' : '#1677ffbf' }} />
+          <div key={i} style={{ ...baseStyle, backgroundColor: i % 2 ? '#008EE0' : '#1677ffbf' }} />
         ))}
       </Flex>
     </Flex>

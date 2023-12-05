@@ -23,7 +23,7 @@ type ThemeData = {
 
 const defaultData: ThemeData = {
   borderRadius: 6,
-  colorPrimary: '#1677ff',
+  colorPrimary: '#008EE0',
   Button: {
     colorPrimary: '#00B96B',
   },

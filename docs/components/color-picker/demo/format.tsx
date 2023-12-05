@@ -3,9 +3,9 @@ import type { Color, ColorPickerProps } from 'antd/es/color-picker';
 import React, { useMemo, useState } from 'react';
 
 export default () => {
-  const [colorHex, setColorHex] = useState<Color | string>('#1677ff');
-  const [colorHsb, setColorHsb] = useState<Color | string>('hsb(215, 91%, 100%)');
-  const [colorRgb, setColorRgb] = useState<Color | string>('rgb(22, 119, 255)');
+  const [colorHex, setColorHex] = useState<Color | string>('#008EE0');
+  const [colorHsb, setColorHsb] = useState<Color | string>('hsb(202, 100%, 88%)');
+  const [colorRgb, setColorRgb] = useState<Color | string>('rgb(0, 142, 224)');
   const [formatHex, setFormatHex] = useState<ColorPickerProps['format']>('hex');
   const [formatHsb, setFormatHsb] = useState<ColorPickerProps['format']>('hsb');
   const [formatRgb, setFormatRgb] = useState<ColorPickerProps['format']>('rgb');

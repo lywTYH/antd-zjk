@@ -30,7 +30,7 @@ const items: MenuProps['items'] = [
 ];
 
 const App: React.FC = () => (
-  <>
+  <div id="components-dropdown-demo-arrow">
     <Dropdown menu={{ items }} placement="bottomLeft" arrow={{ pointAtCenter: true }}>
       <Button>bottomLeft</Button>
     </Dropdown>
@@ -50,7 +50,7 @@ const App: React.FC = () => (
     <Dropdown menu={{ items }} placement="topRight" arrow={{ pointAtCenter: true }}>
       <Button>topRight</Button>
     </Dropdown>
-  </>
+  </div>
 );
 
 export default App;

@@ -56,3 +56,9 @@ demo:
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Rate"></ComponentTokenTable>
+
+<style>
+.ant-rate{
+  color:#008EE0
+}
+</style>

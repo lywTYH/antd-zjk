@@ -114,7 +114,7 @@ const App: React.FC = () => {
       </div>
     ),
     filterIcon: (filtered: boolean) => (
-      <SearchOutlined style={{ color: filtered ? '#1677ff' : undefined }} />
+      <SearchOutlined style={{ color: filtered ? '#008EE0' : undefined }} />
     ),
     onFilter: (value, record) =>
       record[dataIndex]

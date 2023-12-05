@@ -8,7 +8,7 @@ const App: React.FC = () => (
         margin: 24,
         marginLG: 48,
         lineWidth: 5,
-        colorSplit: '#1677ff',
+        colorSplit: '#008EE0',
       },
       components: {
         Divider: {

@@ -10,7 +10,7 @@ const App: React.FC = () => (
           key={i}
           style={{
             height: 60,
-            backgroundColor: i % 2 ? '#1677ff' : '#1677ffbf',
+            backgroundColor: i % 2 ? '#008EE0' : '#1677ffbf',
           }}
         />
       ))}
@@ -22,7 +22,7 @@ const App: React.FC = () => (
           style={{
             width: '25%',
             height: i % 2 ? 60 : 40,
-            backgroundColor: i % 2 ? '#1677ff' : '#1677ffbf',
+            backgroundColor: i % 2 ? '#008EE0' : '#1677ffbf',
           }}
         />
       ))}

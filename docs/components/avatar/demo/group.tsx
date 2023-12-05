@@ -12,7 +12,7 @@ const App: React.FC = () => (
       <Tooltip title="Ant User" placement="top">
         <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
       </Tooltip>
-      <Avatar style={{ backgroundColor: '#1677ff' }} icon={<AntDesignOutlined />} />
+      <Avatar style={{ backgroundColor: '#008EE0' }} icon={<AntDesignOutlined />} />
     </Avatar.Group>
     <Divider />
     <Avatar.Group maxCount={2} maxStyle={{ color: '#f56a00', backgroundColor: '#fde3cf' }}>
@@ -21,7 +21,7 @@ const App: React.FC = () => (
       <Tooltip title="Ant User" placement="top">
         <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
       </Tooltip>
-      <Avatar style={{ backgroundColor: '#1677ff' }} icon={<AntDesignOutlined />} />
+      <Avatar style={{ backgroundColor: '#008EE0' }} icon={<AntDesignOutlined />} />
     </Avatar.Group>
     <Divider />
     <Avatar.Group
@@ -34,7 +34,7 @@ const App: React.FC = () => (
       <Tooltip title="Ant User" placement="top">
         <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
       </Tooltip>
-      <Avatar style={{ backgroundColor: '#1677ff' }} icon={<AntDesignOutlined />} />
+      <Avatar style={{ backgroundColor: '#008EE0' }} icon={<AntDesignOutlined />} />
     </Avatar.Group>
     <Divider />
     <Avatar.Group
@@ -48,14 +48,14 @@ const App: React.FC = () => (
       <Tooltip title="Ant User" placement="top">
         <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
       </Tooltip>
-      <Avatar style={{ backgroundColor: '#1677ff' }} icon={<AntDesignOutlined />} />
+      <Avatar style={{ backgroundColor: '#008EE0' }} icon={<AntDesignOutlined />} />
     </Avatar.Group>
     <Divider />
     <Avatar.Group shape="square">
       <Avatar style={{ backgroundColor: '#fde3cf' }}>A</Avatar>
       <Avatar style={{ backgroundColor: '#f56a00' }}>K</Avatar>
       <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
-      <Avatar style={{ backgroundColor: '#1677ff' }} icon={<AntDesignOutlined />} />
+      <Avatar style={{ backgroundColor: '#008EE0' }} icon={<AntDesignOutlined />} />
     </Avatar.Group>
   </>
 );

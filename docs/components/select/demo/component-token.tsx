@@ -23,7 +23,7 @@ const App: React.FC = () => (
           Select: {
             multipleItemBorderColor: 'rgba(0,0,0,0.06)',
             multipleItemBorderColorDisabled: 'rgba(0,0,0,0.06)',
-            optionSelectedColor: '#1677ff',
+            optionSelectedColor: '#008EE0',
           },
         },
       }}

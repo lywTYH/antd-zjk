@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const Demo = () => {
   const { message } = App.useApp();
-  const [value, setValue] = useState<ColorPickerProps['value']>('#1677ff');
+  const [value, setValue] = useState<ColorPickerProps['value']>('#008EE0');
   return (
     <App>
       <ColorPicker

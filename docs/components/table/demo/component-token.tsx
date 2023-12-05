@@ -261,7 +261,7 @@ const App: React.FC = () => {
           components: {
             Table: {
               colorBgContainer: '#e6f4ff',
-              headerBg: '#1677ff',
+              headerBg: '#008EE0',
               headerColor: '#fff',
               headerSortActiveBg: '#0958d9',
               headerSortHoverBg: '#69b1ff',
@@ -278,7 +278,7 @@ const App: React.FC = () => {
               cellPaddingInlineSM: 12,
               borderColor: '#e6f4ff',
               headerBorderRadius: 0,
-              footerBg: '#1677ff',
+              footerBg: '#008EE0',
               footerColor: '#fff',
               cellFontSize: 16,
               cellFontSizeMD: 16,
