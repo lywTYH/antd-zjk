@@ -21,7 +21,13 @@ subtitle: 结果
 <code src="./demo/404.tsx">404</code>
 <code src="./demo/500.tsx">500</code>
 <code src="./demo/error.tsx">Error</code>
-<code src="./demo/customIcon.tsx">自定义 icon</code>
+<code src="./demo/inProgress.tsx">建设中</code>
+<code src="./demo/loadingError.tsx">加载失败</code>
+<code src="./demo/noContent.tsx">暂无内容</code>
+<code src="./demo/noData.tsx">暂无数据</code>
+<code src="./demo/noNotification.tsx">暂无通知公告</code>
+<code src="./demo/noSearchData.tsx">暂无搜索结果</code>
+<code src="./demo/noTask.tsx">暂无任务</code>
 
 ## API
 
