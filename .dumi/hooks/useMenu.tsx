@@ -2,13 +2,37 @@ import { useFullSidebarData, useSidebarData } from 'dumi';
 import React, { useMemo } from 'react';
 import type { MenuProps } from '../../dist';
 import { Tag, version } from '../../dist';
-
+import {
+  DataDisplayIcon,
+  DataEntryIcon,
+  FeedbackIcon,
+  GeneralIcon,
+  LayoutIcon,
+  NavigationIcon,
+  OtherIcon,
+} from '../theme/common/Icons';
 import Link from '../theme/common/Link';
 import useLocation from './useLocation';
 
 export interface UseMenuOptions {
   before?: React.ReactNode;
   after?: React.ReactNode;
+}
+const GroupTitleIconMaps = {
+  通用: <GeneralIcon />,
+  布局: <LayoutIcon />,
+  数据录入: <DataEntryIcon />,
+  导航: <NavigationIcon />,
+  数据展示: <DataDisplayIcon />,
+  反馈: <FeedbackIcon />,
+  其他: <OtherIcon />,
+};
+function GroupTitle({ title }: { title: string }) {
+  return (
+    <>
+      {GroupTitleIconMaps[title]} {title}
+    </>
+  );
 }
 
 const useMenu = (options: UseMenuOptions = {}): [MenuProps['items'], string] => {
@@ -112,8 +136,8 @@ const useMenu = (options: UseMenuOptions = {}): [MenuProps['items'], string] => 
           } else {
             result.push({
               type: 'group',
-              label: group?.title,
-              key: group?.title,
+              label: <GroupTitle title={group.title} />,
+              key: group.title,
               children: group.children?.map((item) => ({
                 label: (
                   <Link
