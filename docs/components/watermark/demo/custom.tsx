@@ -17,7 +17,7 @@ interface WatermarkConfig {
 const App: React.FC = () => {
   const [form] = Form.useForm();
   const [config, setConfig] = useState<WatermarkConfig>({
-    content: 'Ant Design',
+    content: 'Csces Design',
     color: 'rgba(0, 0, 0, 0.15)',
     fontSize: 16,
     zIndex: 11,
@@ -77,7 +77,8 @@ const App: React.FC = () => {
             maxWidth: 800,
             position: 'relative',
           }}
-          src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*zx7LTI_ECSAAAAAAAAAAAABkARQnAQ"
+          src="
+          http://lc-DyybZHGL.cn-n1.lcfile.com/TL4wdWfyASIzawsmBJxSYVIl4WpN8TJa/csces.png"
           alt="示例图片"
         />
       </Watermark>

@@ -5,7 +5,10 @@ const App: React.FC = () => (
   <Image.PreviewGroup
     preview={{ countRender: (current, total) => `当前 ${current} / 总计 ${total}` }}
   >
-    <Image width={150} src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" />
+    <Image
+      width={150}
+      src="http://lc-DyybZHGL.cn-n1.lcfile.com/Ttt7VNdhE5LITG3aNIATPmHilFiogqWz/logo.svg"
+    />
     <Image
       width={150}
       src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"

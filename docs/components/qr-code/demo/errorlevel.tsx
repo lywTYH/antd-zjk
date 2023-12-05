@@ -9,7 +9,7 @@ const App: React.FC = () => {
       <QRCode
         style={{ marginBottom: 16 }}
         errorLevel={level as QRCodeProps['errorLevel']}
-        value="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+        value="http://lc-DyybZHGL.cn-n1.lcfile.com/Ttt7VNdhE5LITG3aNIATPmHilFiogqWz/logo.svg"
       />
       <Segmented options={['L', 'M', 'Q', 'H']} value={level} onChange={setLevel} />
     </>

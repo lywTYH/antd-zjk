@@ -2,7 +2,7 @@ import { Watermark } from 'antd';
 import React from 'react';
 
 const App: React.FC = () => (
-  <Watermark content="Ant Design">
+  <Watermark content="Csces Design">
     <div style={{ height: 500 }} />
   </Watermark>
 );

@@ -5,7 +5,8 @@ const App: React.FC = () => (
   <QRCode
     errorLevel="H"
     value="https://ant.design/"
-    icon="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+    icon="http://lc-DyybZHGL.cn-n1.lcfile.com/Ttt7VNdhE5LITG3aNIATPmHilFiogqWz/logo.svg
+    "
   />
 );
 

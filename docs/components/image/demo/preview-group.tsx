@@ -7,10 +7,13 @@ const App: React.FC = () => (
       onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
     }}
   >
-    <Image width={200} src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" />
     <Image
       width={200}
-      src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"
+      src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+    />
+    <Image
+      width={200}
+      src="https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp"
     />
   </Image.PreviewGroup>
 );
