@@ -36,3 +36,9 @@ subtitle: 结果
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Result"></ComponentTokenTable>
+
+<style>
+.site-result-demo-error-icon {
+  color: red;
+}
+</style>

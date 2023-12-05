@@ -77,3 +77,19 @@ Ant Design 依次提供了三级选项卡，分别用于不同的场景。
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Tabs"></ComponentTokenTable>
+
+<style>
+.tabs-extra-demo-button {
+  margin-right: 16px;
+}
+
+.ant-row-rtl .tabs-extra-demo-button {
+  margin-right: 0;
+  margin-left: 16px;
+}
+
+/* set transition to none when type="editable-card" */
+.ant-tabs-editable > .ant-tabs-nav .ant-tabs-tab {
+  transition: none;
+}
+</style>

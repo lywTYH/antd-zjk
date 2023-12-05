@@ -65,3 +65,9 @@ return (
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Timeline"></ComponentTokenTable>
+
+<style>
+.timeline-clock-icon {
+  font-size: 16px;
+}
+</style>

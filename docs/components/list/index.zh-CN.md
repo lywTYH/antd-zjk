@@ -87,3 +87,9 @@ subtitle: 列表
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="List"></ComponentTokenTable>
+
+<style>
+.demo-loadmore-list {
+  min-height: 350px;
+}
+</style>

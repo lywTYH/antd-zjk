@@ -119,3 +119,21 @@ demo:
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Upload"></ComponentTokenTable>
+
+<style>
+
+/* tile uploaded pictures */
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 200px;
+  margin-inline-end: 8px;
+}
+
+.ant-upload-rtl.upload-list-inline .ant-upload-list-item {
+  float: right;
+}
+
+.is-dragging a {
+  pointer-events: none;
+}
+</style>

@@ -3,6 +3,7 @@ category: Components
 subtitle: 栅格
 group: 布局
 title: Grid
+debug: true
 ---
 
 24 栅格系统。
@@ -65,3 +66,48 @@ title: Grid
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Grid"></ComponentTokenTable>
+
+<style>
+#components-grid-demo-playground [class~='ant-col'] {
+  background: transparent;
+  border: 0;
+}
+#components-grid-demo-playground [class~='ant-col'] > div {
+  height: 120px;
+  font-size: 14px;
+  line-height: 120px;
+  background: #0092ff;
+  border-radius: 4px;
+}
+#components-grid-demo-playground pre {
+  padding: 8px 16px;
+  font-size: 13px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+#components-grid-demo-playground pre.demo-code {
+  direction: ltr;
+}
+#components-grid-demo-playground .ant-col {
+  padding: 0;
+}
+
+.gutter-box {
+  padding: 8px 0;
+  background: #00a0e9;
+}
+
+
+#components-grid-demo-flex [class~='ant-row'] {
+  background: rgba(128, 128, 128, 0.08);
+}
+
+#components-grid-demo-flex-order [class~='ant-row'] {
+  background: rgba(128, 128, 128, 0.08);
+}
+
+#components-grid-demo-flex-align [class~='ant-row'] {
+  background: rgba(128, 128, 128, 0.08);
+}
+
+</style>

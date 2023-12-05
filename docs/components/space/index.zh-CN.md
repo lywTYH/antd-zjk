@@ -3,6 +3,7 @@ category: Components
 group: 布局
 subtitle: 间距
 title: Space
+debug: true
 ---
 
 设置组件之间的间距。
@@ -79,3 +80,52 @@ title: Space
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Space"></ComponentTokenTable>
+
+<style>
+.space-align-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.space-align-block {
+  flex: none;
+  margin: 8px 4px;
+  padding: 4px;
+  border: 1px solid #40a9ff;
+}
+.space-align-block .mock-block {
+  display: inline-block;
+  padding: 32px 8px 16px;
+  background: rgba(150, 150, 150, 0.2);
+}
+
+.site-space-compact-wrapper .site-input-split {
+  background-color: #fff;
+}
+
+.site-space-compact-wrapper .site-input-right:not(.ant-input-rtl) {
+  border-left-width: 0;
+}
+
+.site-space-compact-wrapper .site-input-right:not(.ant-input-rtl):hover,
+.site-space-compact-wrapper .site-input-right:not(.ant-input-rtl):focus {
+  border-left-width: 1px;
+}
+
+.site-space-compact-wrapper .site-input-right.ant-input-rtl {
+  border-right-width: 0;
+}
+
+.site-space-compact-wrapper .site-input-right.ant-input-rtl:hover,
+.site-space-compact-wrapper .site-input-right.ant-input-rtl:focus {
+  border-right-width: 1px;
+}
+
+.select-before {
+  width: 90px;
+}
+
+.select-after {
+  width: 80px;
+}
+</style>

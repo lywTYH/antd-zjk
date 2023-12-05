@@ -98,3 +98,9 @@ return <Transfer rowKey={(record) => record.uid} />;
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Transfer"></ComponentTokenTable>
+
+<style>
+#components-transfer-demo-table-transfer .ant-table td {
+  background: transparent;
+}
+</style>

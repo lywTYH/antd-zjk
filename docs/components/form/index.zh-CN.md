@@ -653,3 +653,47 @@ const MyInput = (props) => (
   <MyInput />
 </Form.Item>;
 ```
+
+<style>
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
+
+.collection-create-form_last-form-item {
+  margin-bottom: 0;
+}
+
+.dynamic-delete-button {
+  position: relative;
+  top: 4px;
+  margin: 0 8px;
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.dynamic-delete-button:hover {
+  color: #777;
+}
+.dynamic-delete-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+#components-form-demo-control-ref .ant-btn {
+  margin-right: 8px;
+}
+
+#components-form-demo-control-hooks .ant-btn {
+  margin-right: 8px;
+}
+</style>

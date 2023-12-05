@@ -38,3 +38,11 @@ demo:
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Spin"></ComponentTokenTable>
+
+<style>
+.content {
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+</style>

@@ -3,6 +3,7 @@ category: Components
 subtitle: 弹性布局
 group: 布局
 title: Flex
+debug: true
 ---
 
 ## 何时使用

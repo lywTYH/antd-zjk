@@ -148,3 +148,33 @@ const { componentDisabled, componentSize } = ConfigProvider.useConfig();
 | typography | 设置 Typography 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - |  |
 | upload | 设置 Upload 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - |  |
 | wave | 设置水波纹特效 | { disabled?: boolean, showEffect?: (node: HTMLElement, info: { className, token, component }) => void } | - |  |
+
+<style>
+.button-demo .ant-btn,
+.button-demo .ant-btn-group {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}
+.button-demo .ant-btn-group > .ant-btn,
+.button-demo .ant-btn-group > span > .ant-btn {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.head-example {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  vertical-align: middle;
+  background: #eee;
+  border-radius: 4px;
+}
+
+.ant-badge:not(.ant-badge-not-a-wrapper) {
+  margin-right: 20px;
+}
+.ant-badge-rtl:not(.ant-badge-not-a-wrapper) {
+  margin-right: 0;
+  margin-left: 20px;
+}
+</style>

@@ -6,7 +6,10 @@
 
 Spin in a container.
 
-```css
+<style>
+.example {
+    background: rgba(255,255,255,0.08);
+ }
 .example {
   margin: 20px 0;
   margin-bottom: 20px;
@@ -15,10 +18,4 @@ Spin in a container.
   background: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
 }
-```
-
-<style>
-  .example {
-    background: rgba(255,255,255,0.08);
-  }
 </style>

@@ -122,3 +122,9 @@ demo:
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Tree"></ComponentTokenTable>
+
+<style>
+.site-tree-search-value {
+  color: #f50;
+}
+</style>

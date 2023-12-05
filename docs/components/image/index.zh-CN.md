@@ -156,3 +156,39 @@ type TransformAction =
 ## 主题变量（Design Token）
 
 <ComponentTokenTable component="Image"></ComponentTokenTable>
+
+<style>
+.toolbar-wrapper {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  padding: 0px 24px;
+  color: #fff;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  transform: translateX(-50%);
+}
+
+.toolbar-wrapper .anticon {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.toolbar-wrapper .anticon[disabled] {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.toolbar-wrapper .anticon:hover {
+  opacity: 0.3;
+}
+
+.customize-mask {
+  font-size: 20px;
+  opacity: 1;
+}
+.customize-mask .anticon {
+  font-size: 32px;
+}
+</style>

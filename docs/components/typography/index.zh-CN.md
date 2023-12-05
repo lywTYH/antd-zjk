@@ -3,6 +3,8 @@ category: Components
 subtitle: 排版
 group: 通用
 title: Typography
+debug: true
+sidebar: false
 ---
 
 文本的基本格式。
