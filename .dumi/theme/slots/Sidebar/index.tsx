@@ -15,10 +15,6 @@ const useStyle = createStyles(({ token, css }) => {
       padding-bottom: 48px;
       font-family: Avenir, ${fontFamily}, sans-serif;
 
-      .${antCls}-menu-item-selected > .ant-menu-title-content > a {
-        font-size: 18px !important;
-      }
-
       &${antCls}-menu-inline {
         > li:first-of-type a {
           font-size: 18px !important;
