@@ -1,0 +1,6 @@
+.ant-drawer-content-wrapper .ant-drawer-wrapper-body > .ant-drawer-footer {
+  text-align: right;
+}
+.ant-drawer-content-wrapper .ant-drawer-wrapper-body > .ant-drawer-footer > .ant-btn {
+  margin-inline-start: 8px;
+}

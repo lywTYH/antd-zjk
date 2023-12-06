@@ -1,0 +1,27 @@
+.ant-tree-select-dropdown {
+  padding: 0px;
+}
+
+.ant-tree-select-dropdown .ant-select-tree {
+  & .ant-select-tree-indent-unit {
+    width: 16px;
+  }
+  & .ant-select-tree-treenode:hover {
+    background-color: rgba(0, 129, 204, 0.1);
+  }
+}
+
+.ant-select-tree-treenode-selected {
+  background-color: rgba(0, 129, 204, 0.1);
+}
+
+.ant-tree-select-dropdown
+  .ant-select-tree
+  .ant-select-tree-treenode-active
+  .ant-select-tree-node-content-wrapper {
+  outline: unset;
+  outline-offset: 1px;
+}
+.ant-select-tree-switcher {
+  width: 16px;
+}

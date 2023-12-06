@@ -1,0 +1,11 @@
+.result-exception > .ant-result-icon > .ant-result-image {
+  height: 205px;
+  width: 320px;
+}
+.result-exception > .ant-result-icon {
+  margin-bottom: 0px;
+}
+.result-exception > .ant-result-title {
+  margin-bottom: 0px;
+  font-weight: 600;
+}

@@ -1,0 +1,12 @@
+.ant-tree .ant-tree-indent-unit {
+  width: 16px;
+}
+.ant-tree .ant-tree-treenode {
+  width: 100%;
+}
+.ant-tree .ant-tree-treenode:hover {
+  background-color: rgba(0, 129, 204, 0.1);
+}
+.ant-tree-switcher {
+  width: 16px;
+}

@@ -1,0 +1,41 @@
+.ant-modal > .ant-modal-content {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+.ant-modal > .ant-modal-content > .ant-modal-header,
+.ant-modal > .ant-modal-content > .ant-modal-body,
+.ant-modal > .ant-modal-content > .ant-modal-footer {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.ant-modal > .ant-modal-content > .ant-modal-body > .ant-modal-confirm-body-wrapper {
+  padding-top: 20px;
+}
+.ant-modal > .ant-modal-content > .ant-modal-header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.ant-modal .ant-modal-close {
+  top: 13px;
+}
+
+.ant-modal.ant-modal-theme-default .ant-modal-content > .ant-modal-header {
+  border-bottom: 1px solid rgba(25, 25, 25, 0.1);
+}
+.ant-modal.ant-modal-theme-default .ant-modal-content > .ant-modal-header:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 4px;
+  background: #008ee0;
+  height: 12px;
+}
+
+.ant-modal.ant-modal-theme-primary .ant-modal-content > .ant-modal-header {
+  background: #008ee0;
+}
+.ant-modal.ant-modal-theme-primary .ant-modal-close .ant-modal-close-icon {
+  color: #ffffff;
+}

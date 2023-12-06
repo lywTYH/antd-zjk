@@ -1,0 +1,6 @@
+.ant-pagination-item:not(.ant-pagination-item-active):hover {
+  border-color: #239cd9;
+}
+.ant-pagination-item:not(.ant-pagination-item-active):hover a {
+  color: #239cd9;
+}
