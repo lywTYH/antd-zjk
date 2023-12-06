@@ -35,7 +35,7 @@ subtitle: 结果
 | --- | --- | --- | --- |
 | extra | 操作区 | ReactNode | - |
 | icon | 自定义 icon | ReactNode | - |
-| status | 结果的状态，决定图标和颜色 | `success` \| `error` \| `info` \| `warning` \| `404` \| `403` \| `500` | `info` |
+| status | 结果的状态，决定图标和颜色 | `success` \| `error` \| `info` \| `warning` \| `404` \| `403` \| `500` \| `info` \| `inProgress` \| `loadingError` \| `noContent` \| `noData` \| `noNotification` \| `noSearchData` \| `noTask` | - |
 | subTitle | subTitle 文字 | ReactNode | - |
 | title | title 文字 | ReactNode | - |
 

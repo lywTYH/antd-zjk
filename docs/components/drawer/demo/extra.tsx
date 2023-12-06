@@ -40,10 +40,7 @@ const App: React.FC = () => {
         open={open}
         extra={
           <Space>
-            <Button onClick={onClose}>Cancel</Button>
-            <Button type="primary" onClick={onClose}>
-              OK
-            </Button>
+            <h3>extra info</h3>
           </Space>
         }
       >
