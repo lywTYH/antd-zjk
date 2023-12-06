@@ -14,7 +14,7 @@ export default defineConfig({
   mfsu: false,
   alias: {
     'antd/es': path.join(__dirname, 'dist/antd'),
-    antd: path.join(__dirname, 'dist/antd'),
+    antd: path.join(__dirname, 'dist'),
   },
   metas: [{ name: 'theme-color', content: '#1677ff' }],
   conventionRoutes: {

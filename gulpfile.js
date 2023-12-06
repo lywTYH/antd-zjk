@@ -29,6 +29,7 @@ const babelConfig = {
       {
         root: ['./src'],
         alias: {
+          'antd/es': './src/antd',
           antd: './src/antd',
         },
       },
