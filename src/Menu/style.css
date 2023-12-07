@@ -1,0 +1,11 @@
+.ant-menu.ant-menu-inline.ant-menu-light .ant-menu-item.ant-menu-item-selected {
+  position: relative;
+}
+.ant-menu.ant-menu-inline.ant-menu-light .ant-menu-item.ant-menu-item-selected:before {
+  content: '';
+  left: 0;
+  width: 4px;
+  background: #008ee0;
+  height: 100%;
+  position: absolute;
+}

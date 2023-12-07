@@ -20,7 +20,9 @@ const useStyle = createStyles(({ token, css }) => {
           font-size: 18px !important;
           font-weight: bold;
         }
-
+        .ant-menu-item.ant-menu-item-selected:before {
+          display: none;
+        }
         ${antCls}-menu-submenu-title h4,
         > ${antCls}-menu-item,
         ${antCls}-menu-item a {

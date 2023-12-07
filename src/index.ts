@@ -1,5 +1,6 @@
 import Drawer, { DrawerProps } from './Drawer';
 import Logo from './Logo';
+import Menu from './Menu';
 import Modal, { ModalProps } from './Modal';
 import Pagination from './Pagination';
 import Result, { ExceptionStatusType, ResultProps } from './Result';
@@ -12,6 +13,7 @@ export {
   DrawerProps,
   ExceptionStatusType,
   Logo,
+  Menu,
   Modal,
   ModalProps,
   Pagination,

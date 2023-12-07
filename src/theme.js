@@ -138,6 +138,10 @@ export const ComponentsToken = {
     borderRadiusLG: 0,
     borderRadiusSM: 0,
     borderRadiusXS: 0,
+    itemBorderRadius: 0,
     itemMarginInline: 0,
+    colorSplit: 'rgb(255, 255, 255)',
+    subMenuItemBg: 'rgb(255, 255, 255)',
+    itemHoverBg: 'rgba(35, 156, 217, 0.1)',
   },
 };
