@@ -52,7 +52,7 @@ const items: MenuProps['items'] = [
   },
   {
     label: (
-      <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+      <a href="#" target="_blank" rel="noopener noreferrer">
         Navigation Four - Link
       </a>
     ),

@@ -9,7 +9,7 @@ interface IconTextProps {
 }
 
 const listData = Array.from({ length: 3 }).map((_, i) => ({
-  href: 'https://ant.design',
+  href: '#',
   title: `ant design part ${i + 1}`,
   avatar: `https://xsgames.co/randomusers/avatar.php?g=pixel&key=${i}`,
   description:

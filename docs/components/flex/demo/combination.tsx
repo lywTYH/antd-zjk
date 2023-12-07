@@ -22,7 +22,7 @@ const App: React.FC = () => (
         <Typography.Title level={3}>
           “antd is an enterprise-class UI design language and React UI library.”
         </Typography.Title>
-        <Button type="primary" href="https://ant.design" target="_blank">
+        <Button type="primary" href="#" target="_blank">
           Get Start
         </Button>
       </Flex>

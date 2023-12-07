@@ -7,7 +7,7 @@ const App: React.FC = () => (
   <>
     <Avatar.Group>
       <Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=1" />
-      <a href="https://ant.design">
+      <a href="#">
         <Avatar style={{ backgroundColor: '#f56a00' }}>K</Avatar>
       </a>
       <Tooltip title="Ant User" placement="top">

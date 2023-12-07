@@ -2,7 +2,7 @@ import { Input, QRCode, Space } from 'antd';
 import React from 'react';
 
 const App: React.FC = () => {
-  const [text, setText] = React.useState('https://ant.design/');
+  const [text, setText] = React.useState('#/');
 
   return (
     <Space direction="vertical" align="center">

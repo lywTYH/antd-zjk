@@ -173,11 +173,7 @@ const Page: React.FC = () => {
         <p>Locale Modal</p>
       </Modal>
       <Space wrap size={80}>
-        <QRCode
-          value="https://ant.design/"
-          status="expired"
-          onRefresh={() => console.log('refresh')}
-        />
+        <QRCode value="#/" status="expired" onRefresh={() => console.log('refresh')} />
         <Image
           width={160}
           src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"

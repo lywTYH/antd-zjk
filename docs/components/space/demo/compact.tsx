@@ -25,12 +25,12 @@ const App: React.FC = () => (
     </Space.Compact>
     <br />
     <Space.Compact block size="small">
-      <Input style={{ width: 'calc(100% - 200px)' }} defaultValue="https://ant.design" />
+      <Input style={{ width: 'calc(100% - 200px)' }} defaultValue="#" />
       <Button type="primary">Submit</Button>
     </Space.Compact>
     <br />
     <Space.Compact block>
-      <Input style={{ width: 'calc(100% - 200px)' }} defaultValue="https://ant.design" />
+      <Input style={{ width: 'calc(100% - 200px)' }} defaultValue="#" />
       <Button type="primary">Submit</Button>
     </Space.Compact>
     <br />

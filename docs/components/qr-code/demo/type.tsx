@@ -3,8 +3,8 @@ import React from 'react';
 
 const App: React.FC = () => (
   <Space>
-    <QRCode type="canvas" value="https://ant.design/" />
-    <QRCode type="svg" value="https://ant.design/" />
+    <QRCode type="canvas" value="#/" />
+    <QRCode type="svg" value="#/" />
   </Space>
 );
 

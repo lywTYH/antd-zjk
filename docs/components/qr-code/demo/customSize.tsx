@@ -39,7 +39,7 @@ const App: React.FC = () => {
         errorLevel="H"
         size={size}
         iconSize={size / 4}
-        value="https://ant.design/"
+        value="#/"
         icon="http://lc-DyybZHGL.cn-n1.lcfile.com/Ttt7VNdhE5LITG3aNIATPmHilFiogqWz/logo.svg"
       />
     </>

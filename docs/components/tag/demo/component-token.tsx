@@ -15,7 +15,7 @@ export default () => (
   >
     <Space size={[0, 8]} wrap>
       <Tag>
-        <a href="https://github.com/ant-design/ant-design/issues/1862">Link</a>
+        <a href="#">Link</a>
       </Tag>
       <Tag closable color="magenta">
         Tag 2

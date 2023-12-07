@@ -69,7 +69,7 @@ const App: React.FC = () => (
     </Input.Group>
     <br />
     <Input.Group compact>
-      <Input style={{ width: 'calc(100% - 200px)' }} defaultValue="https://ant.design" />
+      <Input style={{ width: 'calc(100% - 200px)' }} defaultValue="#" />
       <Button type="primary">Submit</Button>
     </Input.Group>
     <br />

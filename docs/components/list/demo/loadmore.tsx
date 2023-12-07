@@ -84,7 +84,7 @@ const App: React.FC = () => {
           <Skeleton avatar title={false} loading={item.loading} active>
             <List.Item.Meta
               avatar={<Avatar src={item.picture.large} />}
-              title={<a href="https://ant.design">{item.name?.last}</a>}
+              title={<a href="#">{item.name?.last}</a>}
               description="Ant Design, a design language for background applications, is refined by Ant UED Team"
             />
             <div>content</div>

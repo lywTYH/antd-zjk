@@ -7,12 +7,8 @@ const App: React.FC = () => {
   const { token } = useToken();
   return (
     <Space>
-      <QRCode value="https://ant.design/" color={token.colorSuccessText} />
-      <QRCode
-        value="https://ant.design/"
-        color={token.colorInfoText}
-        bgColor={token.colorBgLayout}
-      />
+      <QRCode value="#/" color={token.colorSuccessText} />
+      <QRCode value="#/" color={token.colorInfoText} bgColor={token.colorBgLayout} />
     </Space>
   );
 };

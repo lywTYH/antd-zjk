@@ -51,7 +51,7 @@ const App: React.FC = () => {
               avatar={
                 <Avatar src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png" />
               }
-              title={<a href="https://ant.design/index-cn">{item.name}</a>}
+              title={<a href="#">{item.name}</a>}
               description="Progresser XTech"
             />
           </List.Item>

@@ -6,7 +6,7 @@ import React from 'react';
 const items: MenuProps['items'] = [
   {
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+      <a target="_blank" rel="noopener noreferrer" href="#">
         1st menu item
       </a>
     ),
@@ -14,7 +14,7 @@ const items: MenuProps['items'] = [
   },
   {
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+      <a target="_blank" rel="noopener noreferrer" href="#">
         2nd menu item
       </a>
     ),

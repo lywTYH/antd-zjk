@@ -18,7 +18,7 @@ const App: React.FC = () => (
     <Text delete>Ant Design (delete)</Text>
     <Text strong>Ant Design (strong)</Text>
     <Text italic>Ant Design (italic)</Text>
-    <Link href="https://ant.design" target="_blank">
+    <Link href="#" target="_blank">
       Ant Design (Link)
     </Link>
   </Space>
