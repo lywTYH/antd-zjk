@@ -1,3 +1,5 @@
+import Cascader from './Cascader';
+import DatePicker from './DatePicker';
 import Drawer, { DrawerProps } from './Drawer';
 import Logo from './Logo';
 import Menu from './Menu';
@@ -9,6 +11,8 @@ import TreeSelect from './TreeSelect';
 export * from 'antd';
 
 export {
+  Cascader,
+  DatePicker,
   Drawer,
   DrawerProps,
   ExceptionStatusType,

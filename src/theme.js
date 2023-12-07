@@ -55,6 +55,9 @@ export const ComponentsToken = {
     marginXXS: 2,
     marginXS: 6,
     paddingXS: 4,
+    controlItemBgActive: 'rgba(0, 142, 224, 0.10)',
+    controlItemBgActiveHover: 'rgba(0, 142, 224, 0.10)',
+    controlItemBgHover: 'rgba(38, 171, 237, 0.1)',
   },
   Pagination: {
     itemActiveBg: '#008EE0',
@@ -70,9 +73,17 @@ export const ComponentsToken = {
     fontSize: 14,
     titleLineHeight: 28,
   },
-  Cascader: { menuPadding: 0, borderRadiusSM: 0 },
+  Cascader: {
+    menuPadding: 0,
+    borderRadiusSM: 0,
+    controlItemBgHover: 'rgba(0, 142, 224, 0.10)',
+    optionSelectedBg: 'rgba(0, 142, 224, 0.10)',
+    // #26ABED
+  },
   Checkbox: {},
-  DatePicker: {},
+  DatePicker: {
+    cellHoverBg: 'rgba(0, 0, 0, 0.09)',
+  },
   Form: {},
   Input: {},
   InputNumber: {},
@@ -138,10 +149,6 @@ export const ComponentsToken = {
     borderRadiusLG: 0,
     borderRadiusSM: 0,
     borderRadiusXS: 0,
-    itemBorderRadius: 0,
     itemMarginInline: 0,
-    colorSplit: 'rgb(255, 255, 255)',
-    subMenuItemBg: 'rgb(255, 255, 255)',
-    itemHoverBg: 'rgba(35, 156, 217, 0.1)',
   },
 };

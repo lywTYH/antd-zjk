@@ -1,0 +1,73 @@
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:not(.ant-picker-cell-in-range):not(
+    .ant-picker-cell-range-start
+  ):not(.ant-picker-cell-range-end)::after,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-end:not(.ant-picker-cell-in-range):not(
+    .ant-picker-cell-range-start
+  ):not(.ant-picker-cell-range-end)::after,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-start.ant-picker-cell-range-start-single::after,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-start.ant-picker-cell-range-start.ant-picker-cell-range-end.ant-picker-cell-range-end-near-hover::after,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-end.ant-picker-cell-range-start.ant-picker-cell-range-end.ant-picker-cell-range-start-near-hover::after,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover-end.ant-picker-cell-range-end-single::after,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-hover:not(.ant-picker-cell-in-range)::after {
+  border: none;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 142, 224, 0.1);
+}
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover::before,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start::before,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end::before,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-start.ant-picker-cell-range-hover::before,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-end.ant-picker-cell-range-hover::before,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(
+    .ant-picker-cell-range-start-single
+  ).ant-picker-cell-range-hover-start::before,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(
+    .ant-picker-cell-range-end-single
+  ).ant-picker-cell-range-hover-end::before,
+.ant-picker-panel
+  > :not(.ant-picker-date-panel)
+  :where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start::before,
+.ant-picker-panel
+  > :not(.ant-picker-date-panel)
+  :where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end::before {
+  background-color: rgba(0, 142, 224, 0.1);
+}
+
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-date-panel
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start
+  .ant-picker-cell-inner::after,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-date-panel
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end
+  .ant-picker-cell-inner::after {
+  display: none;
+}
+
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-date-panel
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start
+  .ant-picker-cell-inner,
+:where(.css-dev-only-do-not-override-1go774u).ant-picker-dropdown
+  .ant-picker-date-panel
+  .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end
+  .ant-picker-cell-inner {
+  color: #26abed;
+}

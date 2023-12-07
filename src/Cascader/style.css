@@ -1,0 +1,7 @@
+.ant-cascader-dropdown .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+.ant-cascader-dropdown .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+  font-weight: normal;
+}
+.ant-cascader-dropdown .ant-cascader-menu-item:hover {
+  color: #26abed;
+}
