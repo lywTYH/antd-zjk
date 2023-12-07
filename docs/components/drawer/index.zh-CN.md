@@ -42,7 +42,7 @@ demo:
 | contentWrapperStyle | 可用于设置 Drawer 包裹内容部分的样式 | CSSProperties | - |  |
 | destroyOnClose | 关闭时销毁 Drawer 里的子元素 | boolean | false |  |
 | extra | 抽屉右上角的操作区域 | ReactNode | - |  |
-| footer | 抽屉的页脚 | ReactNode | - |  |
+| footer | 抽屉的页脚 | ReactNode | - | ReactNode |
 | forceRender | 预渲染 Drawer 内元素 | boolean | false |  |
 | getContainer | 指定 Drawer 挂载的节点，**并在容器内展现**，`false` 为挂载在当前位置 | HTMLElement \| () => HTMLElement \| Selectors \| false | body |  |
 | height | 高度，在 `placement` 为 `top` 或 `bottom` 时使用 | string \| number | 378 |  |
