@@ -4,20 +4,20 @@ import React from 'react';
 
 const data = [
   {
-    title: 'Ant Design Title 1',
+    title: 'Csces Title 1',
     current: 0,
   },
   {
-    title: 'Ant Design Title 2',
+    title: 'Csces Title 2',
     current: 1,
     status: 'error',
   },
   {
-    title: 'Ant Design Title 3',
+    title: 'Csces Title 3',
     current: 2,
   },
   {
-    title: 'Ant Design Title 4',
+    title: 'Csces Title 4',
     current: 1,
   },
 ];
@@ -49,7 +49,7 @@ const App: React.FC = () => (
               <Avatar src={`https://xsgames.co/randomusers/avatar.php?g=pixel&key=${index}`} />
             }
             title={<a href="#">{item.title}</a>}
-            description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+            description="Csces, a design language for background applications, is refined by Ant UED Team"
           />
           <Steps
             style={{ marginTop: 8 }}

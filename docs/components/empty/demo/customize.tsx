@@ -3,8 +3,7 @@ import React from 'react';
 
 const App: React.FC = () => (
   <Empty
-    image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
-    imageStyle={{ height: 60 }}
+    image="http://lc-DyybZHGL.cn-n1.lcfile.com/7shpovbLd1sjFvkdVY1mvzwPmdgxfj17/%E6%9A%82%E6%97%A0%E5%86%85%E5%AE%B9.svg"
     description={
       <span>
         Customize <a href="#API">Description</a>

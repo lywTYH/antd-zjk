@@ -62,7 +62,7 @@ const App: React.FC = () => {
             Bill is a cat.
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}>Csces ©2023 Created by Ant UED</Footer>
       </Layout>
     </Layout>
   );

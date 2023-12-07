@@ -41,7 +41,7 @@ const items: MenuItem[] = [
   ]),
   getItem(
     <a href="#" target="_blank" rel="noopener noreferrer">
-      Ant Design
+      Csces
     </a>,
     'link',
     <LinkOutlined />,

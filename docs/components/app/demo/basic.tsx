@@ -19,7 +19,7 @@ const MyPage = () => {
   const showNotification = () => {
     notification.info({
       message: `Notification topLeft`,
-      description: 'Hello, Ant Design!!',
+      description: 'Hello, Csces!!',
       placement: 'topLeft',
     });
   };

@@ -55,7 +55,6 @@ const App: React.FC = () => (
     style={{ width: 250 }}
     options={options}
     size="large"
-    open
   >
     <Input.Search size="large" placeholder="input here" />
   </AutoComplete>

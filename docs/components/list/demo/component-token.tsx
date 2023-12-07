@@ -11,16 +11,16 @@ const data = [
 
 const data1 = [
   {
-    title: 'Ant Design Title 1',
+    title: 'Csces Title 1',
   },
   {
-    title: 'Ant Design Title 2',
+    title: 'Csces Title 2',
   },
   {
-    title: 'Ant Design Title 3',
+    title: 'Csces Title 3',
   },
   {
-    title: 'Ant Design Title 4',
+    title: 'Csces Title 4',
   },
 ];
 
@@ -84,7 +84,7 @@ const App: React.FC = () => (
               <Avatar src={`https://xsgames.co/randomusers/avatar.php?g=pixel&key=${index}`} />
             }
             title={<a href="#">{item.title}</a>}
-            description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+            description="Csces, a design language for background applications, is refined by Ant UED Team"
           />
         </List.Item>
       )}
@@ -100,7 +100,7 @@ const App: React.FC = () => (
               <Avatar src={`https://xsgames.co/randomusers/avatar.php?g=pixel&key=${index}`} />
             }
             title={<a href="#">{item.title}</a>}
-            description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+            description="Csces, a design language for background applications, is refined by Ant UED Team"
           />
         </List.Item>
       )}

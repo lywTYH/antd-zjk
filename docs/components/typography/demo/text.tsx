@@ -5,21 +5,21 @@ const { Text, Link } = Typography;
 
 const App: React.FC = () => (
   <Space direction="vertical">
-    <Text>Ant Design (default)</Text>
-    <Text type="secondary">Ant Design (secondary)</Text>
-    <Text type="success">Ant Design (success)</Text>
-    <Text type="warning">Ant Design (warning)</Text>
-    <Text type="danger">Ant Design (danger)</Text>
-    <Text disabled>Ant Design (disabled)</Text>
-    <Text mark>Ant Design (mark)</Text>
-    <Text code>Ant Design (code)</Text>
-    <Text keyboard>Ant Design (keyboard)</Text>
-    <Text underline>Ant Design (underline)</Text>
-    <Text delete>Ant Design (delete)</Text>
-    <Text strong>Ant Design (strong)</Text>
-    <Text italic>Ant Design (italic)</Text>
+    <Text>Csces (default)</Text>
+    <Text type="secondary">Csces (secondary)</Text>
+    <Text type="success">Csces (success)</Text>
+    <Text type="warning">Csces (warning)</Text>
+    <Text type="danger">Csces (danger)</Text>
+    <Text disabled>Csces (disabled)</Text>
+    <Text mark>Csces (mark)</Text>
+    <Text code>Csces (code)</Text>
+    <Text keyboard>Csces (keyboard)</Text>
+    <Text underline>Csces (underline)</Text>
+    <Text delete>Csces (delete)</Text>
+    <Text strong>Csces (strong)</Text>
+    <Text italic>Csces (italic)</Text>
     <Link href="#" target="_blank">
-      Ant Design (Link)
+      Csces (Link)
     </Link>
   </Space>
 );

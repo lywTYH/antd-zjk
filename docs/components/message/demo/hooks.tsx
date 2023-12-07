@@ -5,7 +5,7 @@ const App: React.FC = () => {
   const [messageApi, contextHolder] = message.useMessage();
 
   const info = () => {
-    messageApi.info('Hello, Ant Design!');
+    messageApi.info('Hello, Csces!');
   };
 
   return (

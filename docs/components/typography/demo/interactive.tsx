@@ -122,23 +122,23 @@ const App: React.FC = () => {
         {lengthLimitedStr}
       </Paragraph>
       <Typography.Title editable level={1} style={{ margin: 0 }}>
-        h1. Ant Design
+        h1. Csces
       </Typography.Title>
       <Typography.Title editable level={2} style={{ margin: 0 }}>
-        h2. Ant Design
+        h2. Csces
       </Typography.Title>
       <Typography.Title editable level={3} style={{ margin: 0 }}>
-        h3. Ant Design
+        h3. Csces
       </Typography.Title>
       <Typography.Title editable level={4} style={{ margin: 0 }}>
-        h4. Ant Design
+        h4. Csces
       </Typography.Title>
       <Typography.Title editable level={5} style={{ margin: 0 }}>
-        h5. Ant Design
+        h5. Csces
       </Typography.Title>
       <Divider />
       <Paragraph copyable>This is a copyable text.</Paragraph>
-      <Paragraph copyable={{ text: 'Hello, Ant Design!' }}>Replace copy text.</Paragraph>
+      <Paragraph copyable={{ text: 'Hello, Csces!' }}>Replace copy text.</Paragraph>
       <Paragraph
         copyable={{
           icon: [<SmileOutlined key="copy-icon" />, <SmileFilled key="copied-icon" />],

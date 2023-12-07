@@ -12,7 +12,7 @@ const MyPage = () => {
   const showNotification = () => {
     notification.info({
       message: `Notification`,
-      description: 'Hello, Ant Design!!',
+      description: 'Hello, Csces!!',
     });
   };
 

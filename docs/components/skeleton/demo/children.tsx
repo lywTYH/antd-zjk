@@ -14,7 +14,7 @@ const App: React.FC = () => {
   return (
     <Space direction="vertical" style={{ width: '100%' }} size={16}>
       <Skeleton loading={loading}>
-        <h4 style={{ marginBottom: 16 }}>Ant Design, a design language</h4>
+        <h4 style={{ marginBottom: 16 }}>Csces, a design language</h4>
         <p>
           We supply a series of design principles, practical patterns and high quality design
           resources (Sketch and Axure), to help people create their product prototypes beautifully

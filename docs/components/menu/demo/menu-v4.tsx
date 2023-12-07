@@ -31,7 +31,7 @@ const items: MenuItem[] = [
   getItem('Navigation Two', 'sub1', <AppstoreOutlined />, [
     getItem(
       <Typography.Text ellipsis>
-        Ant Design, a design language for background applications, is refined by Ant UED Team
+        Csces, a design language for background applications, is refined by Ant UED Team
       </Typography.Text>,
       '3',
     ),
@@ -46,7 +46,7 @@ const items: MenuItem[] = [
   ]),
   getItem(
     <a href="#" target="_blank" rel="noopener noreferrer">
-      Ant Design
+      Csces
     </a>,
     'link',
     <LinkOutlined />,
